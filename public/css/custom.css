@@ -1,0 +1,19 @@
+article h2, main h2 {
+    font-size: 2rem;
+    color: #6496b0;
+}
+
+article h3, main h3 {
+    font-size: 1.5rem;
+}
+
+article h4, main h4 {
+    font-size: 1.3rem;
+}
+
+article img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}

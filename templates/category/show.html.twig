@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ category.title }} - {{ parent() }}{% endblock %}
+
+{% block header %}
+    <header class="masthead" style="background-image: url({{ asset(getBannerPath(category.slug)) }})">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="post-heading">
+                        <h1>{{ category.title }}</h1>
+                        <h2 class="subheading">Liste des articles "{{ category.shortname }}".</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+{% endblock %}
+
+{% block body %}
+    <article class="mb-4">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5">
+                {% for article in category.articles %}
+                    <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+                        <a href="{{ path('app_article_show', {'category': category.slug, 'slug': article.slug}) }}">
+                            <div class="card">
+                                <img class="card-img-top" src="{{ asset(getBannerPath(category.slug, article.slug)) }}" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ article.title }}</h5>
+                                    <p class="card-text">{{ article.subtitle }}</p>
+                                    <small class="text-muted">{{ article.author }}</small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </article>
+{% endblock %}

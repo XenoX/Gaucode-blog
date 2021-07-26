@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}A propos - {{ parent() }}{% endblock %}
+
+{% block header %}
+    <header class="masthead" style="background-image: url({{ asset('img/mrrobot.jpg') }})">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="post-heading">
+                        <h1>A propos</h1>
+                        <h2 class="subheading">Un mentor qui te veut du bien.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+{% endblock %}
+
+{% block body %}
+    {% set birthdate = date('1992-09-22') %}
+    {% set age = date(date('now')).diff(date(birthdate)) %}
+    <main class="mb-4">
+        <div class="container px-3 px-lg-4">
+            <p>Salut !</p>
+            <p>
+                Je m'appelle Gauthier (aka XenoX), j'ai {{ age.y }}ans, j'habite dans le Nord, à Lille.<br>
+                Je suis passioné par l'informatique (dev, réseaux, systême, sécurité) depuis l'âge de 12ans.
+            </p>
+            <p>J'ai un cursus assez classique : </p>
+            <ul>
+                <li>BEP SEID (<i>Systêmes Eletroniques Industriels Domestiques</i>)</li>
+                <li>Bac Pro SEN option TR (<i>Systême Electronique et Numérique</i>) (<i>Télécomunications Réseaux</i>)</li>
+                <li>BTS SIO option SLAM (<i>Services Informatiques aux Organisations</i>) (<i>Solutions Logicielles et Applications Métiers</i>)</li>
+                <li>SUPINFO</li>
+            </ul>
+            <p>Après les études j'ai été Développeur Web pour plusieurs clients :</p>
+            <ul>
+                <li>Auchan Retail</li>
+                <li>Uni-Medias</li>
+                <li>France Télévisions</li>
+                <li>Decathlon</li>
+            </ul>
+            <p>
+                Depuis l'année 2018, je suis aussi mentor pour OpenClassrooms, c'est à force de voir les étudiants bloqués sur les mêmes problèmes,
+                que j'ai décidé de faire ce blog. Une sorte de compagnion de route d'un étudiant OC :)
+            </p>
+            <p>
+                En plus, c'est un blog collaboratif donc n'hésite pas à <a href="{{ path('app_app_contribute') }}">contribuer</a>,
+                que ce soit de la simple modification ou de la création d'un article.<br>
+                Cela va te permettre d'aider les autres mais aussi de t'apprendre a utiliser Git et Github sur un autre projet que le tiens et donc un début de travail en équipe,
+                c'est pas génial ça ? :)
+            </p>
+            <p>
+                Ce blog est réalisé en Symfony et est open-source, n'hésite pas à y jeter un coup d'oeil, ça se passe ici :
+                <a href="https://github.com/XenoX/Gaucode-blog">https://github.com/XenoX/Gaucode-blog</a>
+            </p>
+        </div>
+    </main>
+{% endblock %}

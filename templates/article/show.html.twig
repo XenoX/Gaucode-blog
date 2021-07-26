@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}[{{ article.category|upper }}] {{ article.title }} - {{ parent() }}{% endblock %}
+
+{% block header %}
+    <header class="masthead" style="background-image: url({{ asset(getBannerPath(article.category, article.slug)) }})">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10   ">
+                    <div class="post-heading">
+                        <h1>{{ article.title }}</h1>
+                        <h2 class="subheading">{{ article.subtitle }}</h2>
+                        <span class="meta">Ecrit par {{ article.author }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+{% endblock %}
+
+{% block body %}
+    <article class="mb-4">
+        <div class="container px-3 px-lg-4">
+            {{ article.content|raw }}
+        </div>
+    </article>
+{% endblock %}
+
+{% block javascripts %}
+    <script>
+        const codes = document.getElementsByTagName('code');
+        for (let code of codes) {
+            const spaceIndex = code.firstChild.textContent.indexOf('\n');
+            const language = spaceIndex === -1 ? code.firstChild.textContent : code.firstChild.textContent.substr(0, spaceIndex);
+            const comment = ['php', 'shell', 'bash'].includes(language) ? '#' : '//';
+
+            code.firstChild.textContent = `${comment} ${code.firstChild.textContent}`;
+
+            code.classList.add(`language-${language}`);
+
+            const parent = code.parentNode;
+            const preWrapper = document.createElement('pre');
+
+            parent.replaceChild(preWrapper, code);
+            preWrapper.appendChild(code);
+        }
+    </script>
+{% endblock %}

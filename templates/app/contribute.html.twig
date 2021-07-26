@@ -1,0 +1,98 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contribuer - {{ parent() }}{% endblock %}
+
+{% block header %}
+    <header class="masthead" style="background-image: url({{ asset('img/contribute.jpg') }})">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="post-heading">
+                        <h1>Contribuer</h1>
+                        <h2 class="subheading">La bonne action du jour.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+{% endblock %}
+
+{% block body %}
+    <main class="mb-4">
+        <div class="container px-3 px-lg-4">
+            <h2>Création ou modification d'un article</h2>
+            <p>
+                Si tu remarque une erreur dans un article, une faute d'orthographe ou une imprécision technique,
+                n'hésite pas à contribuer à la qualité de ce blog.
+            </p>
+            <p>
+                Si tu as une idée d'article et que tu souhaites l'ajouter sur ce blog, d'abord merci beaucoup :)<br>
+                Voici une aide pour mener à bien ta réalisation d'article :
+            </p>
+
+            <h3>Les bases du Markdown</h3>
+            <p>Les articles sont écrit en markdown, voici une aide pour en connaitre les bases nécessaires :</p>
+            <pre><code class="language-markdown">
+# Titre H1 (ne pas utiliser pour les articles)
+## Titre H2
+### Titre H3
+#### Titre H4
+
+**texte en gras**
+_texte en italique_
+
+```php
+code en PHP
+```
+
+- element liste
+- deuxième élément liste
+    - élément sous-liste
+
+[lien vers Google](https://google.com)
+
+![Alt text](lien_de_limage "un titre")
+Le lien de l'image peut-être relatif (image dans le dossier du projet) ou absolue (image sur internet)
+                </code></pre>
+            <p>Plus d'informations : <a href="https://docs.zettlr.com/fr/reference/markdown-basics/" target="_blank">https://docs.zettlr.com/fr/reference/markdown-basics/</a></p>
+            <p>Si vous souhaitez mettre des emojis dans votre article (recommandé) : <a href="https://getemoji.com/">https://getemoji.com/</a></p>
+
+            <h3>Un article sur GauCode Blog</h3>
+            <p>Un article sur ce blog, est représenté par un dossier, dans le dossier <i>public/articles/{categorie}</i>, à la racine du projet.</p>
+            <p>
+                Le nom de se dossier représente le "slug" (sont identifiant, qui sera dans l'URL de la page de l'article)<br>
+                Le nom du dosier ne doit donc pas contenir d'espaces ni d'accents, les espaces sont remplacé par des tiret "<i>-</i>"
+            </p>
+            <p>Dans ce dossier, 5 fichiers obligatoires (sauf l'image) :</p>
+            <ul>
+                <li><i>author.md</i> contient le nom/pseudo de l'auteur de l'article</li>
+                <li><i>title.md</i> contient le titre de l'article</li>
+                <li><i>subtitle.md</i> contient le sous-titre de l'article</li>
+                <li><i>content.md</i> contient le contenu de l'article</li>
+                <li><i>banner.jpg</i> contient l'image de l'article, si le fichier n'existe pas, ça prend l'image de la categorie de l'article (DW par exemple).</li>
+            </ul>
+            <p>
+                Pour l'image de l'article, il faut que cette image soit libre de droits, vous pouvez par exemple la récupérer sur
+                <a href="https://pixabay.com/fr/" target="_blank">https://pixabay.com/fr/</a> ou <a href="https://www.pexels.com/fr-fr/">https://www.pexels.com/fr-fr/</a>
+            </p>
+            <p><i>N'hésitez pas à vous inspirer des articles déjà existants.</i></p>
+            
+            <h3>Et ensuite ?</h3>
+            <p>
+                Une fois l'article crée ou modifié, rendez-vous sur le repository <a href="https://github.com/XenoX/Gaucode-blog" target="_blank">https://github.com/XenoX/Gaucode-blog</a>
+                pour avoir les détails de la procédure. En voici un résumé :
+            </p>
+            <ul>
+                <li>Créer une branche sous la forme : <i>article/slug-de-larticle</i> (pour une création) ou <i>modification/slug-de-larticle</i></li>
+                <li>Ajouter vos modifications</li>
+                <li>Faire un commit</li>
+                <li>Pusher votre branche</li>
+                <li>Faire une PR (Pull Request) entre votre branche et la branche <i>main</i> en m'ajoutant en <i>reviewer</i></li>
+            </ul>
+            <br>
+
+            <h2>Tu remarques un bug ou tu as une idée de fonctionnalité ?</h2>
+            <p>Pour cela, je t'invite à faire une <a href="https://github.com/XenoX/Gaucode-blog/issues" target="_blank">issue</a> sur le repository, en expliquant le bug ou à quel point ta fonctionnalité est superbe !</p>
+        </div>
+    </main>
+{% endblock %}
