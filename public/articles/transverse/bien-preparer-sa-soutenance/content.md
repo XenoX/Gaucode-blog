@@ -25,11 +25,17 @@ Je vous conseil de faire un [Google Slides](https://docs.google.com/presentation
 Voici quelques règles à respecter pour ne pas transformer votre soutenance en cauchemard :
 
 - Pas de paragraphes, seul des titres et des mots clef, sinon vous allez vous enfermer dans la lecture de votre slide et ça ne sera pas du tout agréable pour vous ni pour l'évaluateur
-- Mettez des images, logos, schemas, screenshots
-- Limitez vous a 10 slides
+- Mettez des images, logos, schemas, screenshots, graphiques
+- Ne vous limitez pas au nombre de slides, mais limitez le contenu par slides (sauf cas particulier, pas plus d'une minute d'explication par slide)
 - Choisissez un thème simple et basique pour votre support, pas de floritures
 - N'apprenez pas votre support par coeur, connaissez le et faites lui confiance
 - Laissez place a l'improvisation, rien de pire que quelqu'un qui récite un texte  
+- Evitez au maximum les animations et transition, elles passent très mal en visio-conférence
+- Utilisez les outils de présentateur (que seul vous verrez pendant la présentation) pour : 
+    - ajouter des notes à vos slides
+    - avoir le chronomètre depuis le début de la présentation
+    - gérer les passages d'une slide à l'autre
+    - repérer où vous en êtes dans votre présentation
 
 Ne vous mettez pas la pression si pendant l'entretien vous vous rendez-compte que vous ne respectez pas un des points.
 
@@ -46,6 +52,7 @@ Voici un plan "type", c'est à dire qu'il ne vous conviendra pas forcément mais
 - Démonstration
 - Difficulté(s) rencontrée(s)
 - Améliorations possibles
+- Bilan/Conclusion
 - Slide invitant l'interlocuteur à poser des questions
 - Slide de remerciement
 
@@ -57,6 +64,8 @@ Préparer un timer à coté de vous pour bien vous rendre compte si vous avez de
 
 Les blancs, ce n'est pas grave, ça vous permet de remettre vos idées en place et ça permet aussi à l'évaluteur de reposer un peu ses oreilles.  
 
-Respirez, prenez votre temps, si vous sentez que vous parler trop vite, faites une petite pause et respirez un grand coup :)  
+Respirez, prenez votre temps, si vous sentez que vous parlez trop vite, faites une petite pause et respirez un grand coup :)  
 
 Buvez de l'eau, même pendant l'entretien, personne ne vous en voudra de boire et ça vous permettra d'éviter d'avoir la gorge sèche.
+
+Sans apprendre par coeur, répétez votre présentation, face à des amis ou de la famille qui pourront vous faire un retour constructif, ou même seul, éventuellement en vous enregistrant avec un outils de visio pour vous revoir et vous perfectionner.
