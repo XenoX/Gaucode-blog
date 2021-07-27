@@ -24,4 +24,22 @@ Si vous utilisiez Postman ou un autre client HTTP, vous ne serez pas perdu. Le c
 
 ![ThunderClient](resources/presentation-thunder-client.png)
 
-À vous de jouer !
+### 📂 Importer une collection depuis Postman
+
+Et oui, c'est possible ! Pour faciliter votre transition de Postman vers Thunder Client, voici la marche à suivre :
+
+- Ouvrez Postman et sélectionnez la collection que vous voulez exporter
+
+![PostmanExportThunderClient](resources/postman-export.png)
+
+- Sélectionnez Collection v2.1
+
+![PostmanExportThunderClient](resources/postman-export-2.png)
+
+- Ouvrez l'onglet Thunder Client sur VS Code puis cliquez sur l'icône et "Importer". Importez le fichier json que vous avez exporté depuis Postman.
+
+![PostmanExportThunderClient](resources/import-to-thunder-client.png)
+
+- Vous pouvez maintenant jouer avec votre collection Postman sur VS Code !
+
+![PostmanExportThunderClient](resources/import-to-thunder-client-2.png)
