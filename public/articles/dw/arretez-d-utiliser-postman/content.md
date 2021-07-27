@@ -2,7 +2,7 @@
 
 Dans cet article, je vais te parler d'une extension pour VS Code plutôt bien foutue : [Thunder Client](https://www.thunderclient.io). C'est en fait un client HTTP qui va te permettre de tester une API Rest ou GraphQL directement depuis ton IDE préféré 💖
 
-### Pourquoi devrais-je arrêter d'utiliser Postman ?
+### 💀 Pourquoi devrais-je arrêter d'utiliser Postman ?
 
 Postman est un outil vraiment efficace et utilisé par la plupart des développeurs mais au fur et à mesure des mises à jours, le client de bureau devient de plus en plus lent et l'interface utilisateur commence à être **difficile à comprendre**.
 
@@ -14,14 +14,14 @@ C'est quand même bien pratique de tout avoir au même endroit non ? Ca évite d
 
 Il suffit simplement de te rendre sur la page de [téléchargement du plugin](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client) sur le marketplace de Visual Studio. Il est également possible de le télécharger depuis le logiciel directement, dans l'onglet "Extensions" (Ctrl+Shift+X) et rechercher "Thunder Client".
 
-![DownloadThunderClient](../../articles/dw/arretez-d-utiliser-postman/resources/dl-thunder-client.png)
+![DownloadThunderClient](resources/dl-thunder-client.png)
 
 Un redemarrage de VS Code sera sans doute nécessaire.
 
-### Comment ça marche ?
+### 🤔 Comment ça marche ?
 
 Si vous utilisiez Postman ou un autre client HTTP, vous ne serez pas perdu. Le client s'intègre de manière élégante et fluide à VS Code. Créez des nouvelles requêtes de type POST,GET,PATCH... rapidement ou créez des collections pour regrouper et ranger vos endpoints.
 
-![ThunderClient](../../articles/dw/arretez-d-utiliser-postman/resources/presentation-thunder-client.png)
+![ThunderClient](resources/presentation-thunder-client.png)
 
 À vous de jouer !
