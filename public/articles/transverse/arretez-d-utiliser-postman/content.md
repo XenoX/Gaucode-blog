@@ -4,11 +4,11 @@ Dans cet article, je vais te parler d'une extension pour VS Code plutôt bien fo
 
 ### 💀 Pourquoi devrais-je arrêter d'utiliser Postman ?
 
-Postman est un outil vraiment efficace et utilisé par la plupart des développeurs mais au fur et à mesure des mises à jours, le client de bureau devient de plus en plus lent et l'interface utilisateur commence à être **difficile à comprendre**.
+Postman est un outil vraiment efficace et utilisé par la plupart des développeurs. Malgré ses nombreux avantages (tests automatisés, gestion des tests, gestion du cycle de vie des API entre autres), le client de bureau devient de plus en plus lent au fur et à mesure des mises à jours et l'interface utilisateur commence à être **difficile à comprendre**.
 
 Je pense ne pas me tromper en vous donnant ce second argument pour vous faire télécharger cette extension : **centraliser ses outils de travail**, pour une meilleure efficacité.
 
-C'est quand même bien pratique de tout avoir au même endroit non ? Ca évite de démarrer 15 applis pour commencer à travailler. Lancez VS Code et vous aurez votre éditeur et votre client HTTP. Et en tant que développeur, j'aime l'optimisation 😎
+C'est quand même bien pratique de tout avoir au même endroit non ? Ça nous évite de démarrer 15 applis pour commencer à travailler. Lancez VS Code et vous aurez votre éditeur et votre client HTTP. Et en tant que développeur, j'aime ce genre d'optimisation 😎
 
 ### 🔧 Installation
 
