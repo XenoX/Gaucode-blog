@@ -28,6 +28,12 @@
 
 {% block javascripts %}
     <script>
+        const images = document.getElementsByTagName('img');
+        for (let image of images) {
+            image.src = image.src.replace('article', 'articles');
+            image.src = image.src.replace('{{ article.category }}', '{{ article.category ~ '/' ~ article.slug }}');
+        }
+
         const codes = document.getElementsByTagName('code');
         for (let code of codes) {
             const spaceIndex = code.firstChild.textContent.indexOf('\n');

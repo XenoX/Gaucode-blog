@@ -19,7 +19,6 @@ On appelle ça une "API" (Application Programmation Interface).
 C'est la parti visible par les visiteurs, dans notre cas ici, c'est un site Javascript mais ça peut aussi être une application mobile ou un client lourd (logiciel).  
 Prenez par exemple une application sur ton téléphone, Instagram. Il existe l'application iOS, Android et le site internet. Ces trois projets "front" sont connectés à la même API, ce qui permet d'avoir les données a un seul endroit
 
-[comment]: <> (![API Diagramme]&#40;../../articles/dw/p5-bien-commencer-le-projet-part-1/resources/api_diagram.png&#41;)
 ![API Diagramme](resources/api_diagram.png)
 
 ## 🔧 Installation du projet back-end (API)
@@ -53,7 +52,7 @@ Dans les spécifications du projet, tu peux voir 3 **endpoints** :
 On va récupérer les cameras en créant une nouvelle requête sur Insomnia par exemple, avec comme adresse : _http://localhost:3000/api/cameras_, pour la méthode on va laisser **GET**  
 Tu peux envoyer la requête et si tout ce passe bien, tu devrais avoir pareil que le screenshot ci-dessous :
 
-![Insomnia](../../articles/dw/p5-bien-commencer-le-projet-part-1/resources/insomnia_1.jpg)
+![Insomnia](resources/insomnia_1.jpg)
 
 À droite tu as donc la réponse de l'API que tu as lancé avant, qui écoute sur le port 3000 (pour ça que l'URL que tu mets dans ton logiciel est _http://localhost:3000_)
 
