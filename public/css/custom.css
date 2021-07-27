@@ -17,3 +17,7 @@ article img {
     margin-right: auto;
     max-width: 100%;
 }
+
+em {
+    font-style: italic;
+}
