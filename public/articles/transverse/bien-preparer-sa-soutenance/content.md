@@ -2,17 +2,17 @@ Félicitations ! Car si cet article t'intéresse, c'est que tu as au moins réal
 
 ## 🤔 Qu'est-ce qu'une soutenance ?
 
-Une soutenance est un entretien de mise en situation (situation qui dépend du projet), qui dure environ 45min, avec dans la plupart du temps, ce schema :  
+Une soutenance est un entretien de mise en situation (situation qui dépend du projet), qui dure environ 45min, avec dans la plupart du temps, ce schéma :  
 
 - 10/15 minutes de présentation
-- 10/15 minutes de discussions
+- 10/15 minutes de discussion
 - 10 minutes de feedback de l'évaluateur
 
 Un jeux de rôles est à respecter (vouvoiement), la webcam est à activer, avec un cadre propre et un environnement sonore sain.
 
 ### Bien prendre en compte le contexte
 
-Mettez vous bien en tête le contexte de l'entretien, par exemple, pour le projet 4 du parcours Dévelopeur Web (DW), "Optimisez un site web existant" l'évaluateur prendra le rôle du CEO d'une entreprise de web design, ce n'est donc pas forcément pertinant d'expliquer pendant l'entretien, comment transformer une image PNG en JPG.  
+Mettez-vous bien en tête le contexte de l'entretien, par exemple, pour le projet 4 du parcours Développeur Web (DW), "Optimisez un site web existant" l'évaluateur prendra le rôle du CEO d'une entreprise de web design, ce n'est donc pas forcément pertinant d'expliquer pendant l'entretien, comment transformer une image PNG en JPG.  
 Si votre interlocuteur n'est pas un technique, évitez de rentrer dans les détails technique de votre projet (je sais, pas facile)  
 
 ## 📊 Votre support
@@ -22,14 +22,14 @@ Je vous conseil de faire un [Google Slides](https://docs.google.com/presentation
 
 ### Règles à respecter
 
-Voici quelques règles à respecter pour ne pas transformer votre soutenance en cauchemard :
+Voici quelques règles à respecter pour ne pas transformer votre soutenance en cauchemar :
 
 - Pas de paragraphes, seul des titres et des mots clef, sinon vous allez vous enfermer dans la lecture de votre slide et ça ne sera pas du tout agréable pour vous ni pour l'évaluateur
-- Mettez des images, logos, schemas, screenshots, graphiques
+- Mettez des images, logos, schémas, screenshots, graphiques
 - Ne vous limitez pas au nombre de slides, mais limitez le contenu par slides (sauf cas particulier, pas plus d'une minute d'explication par slide)
 - Choisissez un thème simple et basique pour votre support, pas de floritures
-- N'apprenez pas votre support par coeur, connaissez le et faites lui confiance
-- Laissez place a l'improvisation, rien de pire que quelqu'un qui récite un texte  
+- N'apprenez pas votre support par coeur, connaissez-le et faites-lui confiance
+- Laissez place à l'improvisation, rien de pire que quelqu'un qui récite un texte  
 - Evitez au maximum les animations et transition, elles passent très mal en visio-conférence
 - Utilisez les outils de présentateur (que seul vous verrez pendant la présentation) pour : 
     - ajouter des notes à vos slides
@@ -37,18 +37,18 @@ Voici quelques règles à respecter pour ne pas transformer votre soutenance en 
     - gérer les passages d'une slide à l'autre
     - repérer où vous en êtes dans votre présentation
 
-Ne vous mettez pas la pression si pendant l'entretien vous vous rendez-compte que vous ne respectez pas un des points.
+Ne vous mettez pas la pression si pendant l'entretien vous vous rendez compte que vous ne respectez pas un des points.
 
 ### Plan type
 
-Voici un plan "type", c'est à dire qu'il ne vous conviendra pas forcément mais vous pouvez vous en imspirer pour faire un bon support de présentation.
+Voici un plan "type", c'est à dire qu'il ne vous conviendra pas forcément mais vous pouvez vous en inspirer pour faire un bon support de présentation.
 
 - Sommaire
 - Rappel du contexte
 - Rappel des besoins
-- Rappel des contraintes (si il y en as)
+- Rappel des contraintes (si il y en a)
 - Choix des technologies et pourquoi
-- Solutions mises en places (mobile first, pattern 7-1, etc...)
+- Solutions mises en place (mobile first, pattern 7-1, etc...)
 - Démonstration
 - Difficulté(s) rencontrée(s)
 - Améliorations possibles
@@ -60,9 +60,9 @@ Ne passer pas trop de temps sur le sommaire, il est là pour donner une idée de
 
 ## 🧐 Autres astuces
 
-Préparer un timer à coté de vous pour bien vous rendre compte si vous avez de l'avance ou non.  
+Préparer un timer à côté de vous pour bien vous rendre compte si vous avez de l'avance ou non.  
 
-Les blancs, ce n'est pas grave, ça vous permet de remettre vos idées en place et ça permet aussi à l'évaluteur de reposer un peu ses oreilles.  
+Les blancs, ce n'est pas grave, ça vous permet de remettre vos idées en place et ça permet aussi à l'évaluateur de reposer un peu ses oreilles.  
 
 Respirez, prenez votre temps, si vous sentez que vous parlez trop vite, faites une petite pause et respirez un grand coup :)  
 

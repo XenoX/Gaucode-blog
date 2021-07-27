@@ -9,22 +9,22 @@ C'est un projet qui n'a pas d'interface graphique, il attend qu'on lui demande d
 
 Exemples :
 
-- Donne moi la liste des produits
-- Donne moi les informations du produit avec l'identifiant _42_
+- Donne-moi la liste des produits
+- Donne-moi les informations du produit avec l'identifiant _42_
 
 On appelle ça une "API" (Application Programmation Interface).
 
 ### Front-end ?!
 
 C'est la parti visible par les visiteurs, dans notre cas ici, c'est un site Javascript mais ça peut aussi être une application mobile ou un client lourd (logiciel).  
-Prenez par exemple une application sur ton téléphone, Instagram. Il existe l'application iOS, Android et le site internet. Ces trois projets "front" sont connectés à la même API, ce qui permet d'avoir les données a un seul endroit
+Prenez par exemple une application sur ton téléphone, Instagram. Il existe l'application iOS, Android et le site internet. Ces trois projets "front" sont connectés à la même API, ce qui permet d'avoir les données à un seul endroit
 
 ![API Diagramme](resources/api_diagram.png)
 
 ## 🔧 Installation du projet back-end (API)
 
 Si tu as bien suivi, ce projet est déjà fait et fonctionnel.  
-Mets toi dans le dossier ou tu souhaites mettre l'API
+Mets-toi dans le dossier ou tu souhaites mettre l'API
 
 ```shell
 $ git clone https://github.com/OpenClassrooms-Student-Center/JWDP5
@@ -43,6 +43,8 @@ Garde ton terminal de côté car si tu fermes la fenêtre, ça va arrêter l'API
 Maintenant que l'API est lancée, tu peux lui demander des informations, pour cela on va installer un **client API**, tu peux prendre [Insomnia API](https://insomnia.rest/) ou [Postman](https://www.postman.com/).  
 Le premier étant plus simple, le deuxième est plus complet.
 
+👉 _Tu peux aussi le faire directement sur VSCode en suivant cette article : [Arretez d'utiliser Postman](/article/transverse/arretez-d-utiliser-postman)_
+
 Dans les spécifications du projet, tu peux voir 3 **endpoints** :
 
 - GET /api/cameras
@@ -50,14 +52,14 @@ Dans les spécifications du projet, tu peux voir 3 **endpoints** :
 - POST /api/order
 
 On va récupérer les cameras en créant une nouvelle requête sur Insomnia par exemple, avec comme adresse : _http://localhost:3000/api/cameras_, pour la méthode on va laisser **GET**  
-Tu peux envoyer la requête et si tout ce passe bien, tu devrais avoir pareil que le screenshot ci-dessous :
+Tu peux envoyer la requête et si tout se passe bien, tu devrais avoir pareil que le screenshot ci-dessous :
 
 ![Insomnia](resources/insomnia_1.jpg)
 
-À droite tu as donc la réponse de l'API que tu as lancé avant, qui écoute sur le port 3000 (pour ça que l'URL que tu mets dans ton logiciel est _http://localhost:3000_)
+À droite tu as donc la réponse de l'API que tu as lancée avant, qui écoute sur le port 3000 (pour ça que l'URL que tu mets dans ton logiciel est _http://localhost:3000_)
 
 Le but ici va être de te créer un dossier "Orinoco" (comme j'ai fait sur le screen au dessus) avec les 3 requêtes à l'intérieur.  
-Pour le deuxième GET c'est facile, il suffit de prendre l'id d'un article et de le mettre à la place de **:id**, l'API devrait te répondre seulement les informations de ce produit  
+Pour le deuxième GET c'est facile, il suffit de prendre l'id d'un article et de le mettre à la place de **:id**, l'API devrait te répondre seulement les informations de ce produit.  
 Pour la troisième requête, n'oublie pas de mettre la méthode en POST, car ici ça ne sera pas une simple récupération d'informations mais une création, je te conseille de bien lire la documentation fournie avec le projet pour que ça fonctionne comme il faut 👍.
 
-👉 On se retrouve bientôt pour la partie 2 
+👉 On se retrouve bientôt pour la partie 2.
