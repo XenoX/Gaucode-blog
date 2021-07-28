@@ -38,7 +38,11 @@
         for (let code of codes) {
             const spaceIndex = code.firstChild.textContent.indexOf('\n');
             const language = spaceIndex === -1 ? code.firstChild.textContent : code.firstChild.textContent.substr(0, spaceIndex);
-            const comment = ['php', 'shell', 'bash'].includes(language) ? '#' : '//';
+            let comment = ['php', 'shell', 'bash'].includes(language) ? '#' : '//';
+            if (language === 'html') {
+                comment = '<!--';
+                code.firstChild.textContent = code.firstChild.textContent.substring(0, spaceIndex) + ' -->' + code.firstChild.textContent.substring(spaceIndex);
+            }
 
             code.firstChild.textContent = `${comment} ${code.firstChild.textContent}`;
 

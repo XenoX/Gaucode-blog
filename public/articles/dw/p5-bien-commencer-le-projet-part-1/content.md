@@ -62,4 +62,8 @@ Le but ici va être de te créer un dossier "Orinoco" (comme j'ai fait sur le sc
 Pour le deuxième GET c'est facile, il suffit de prendre l'id d'un article et de le mettre à la place de **:id**, l'API devrait te répondre seulement les informations de ce produit.  
 Pour la troisième requête, n'oublie pas de mettre la méthode en POST, car ici ça ne sera pas une simple récupération d'informations mais une création, je te conseille de bien lire la documentation fournie avec le projet pour que ça fonctionne comme il faut 👍.
 
-👉 On se retrouve bientôt pour la partie 2.
+👉 La suite : [Partie 2](/article/dw/p5-bien-commencer-le-projet-part-2)
+
+## 📚 Ressources utiles
+
+[API Rest (cours OC)](https://openclassrooms.com/fr/courses/6573181-adoptez-les-api-rest-pour-vos-projets-web)
