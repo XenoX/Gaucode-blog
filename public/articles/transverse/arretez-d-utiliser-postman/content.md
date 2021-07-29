@@ -16,7 +16,7 @@ Il suffit simplement de te rendre sur la page de [téléchargement du plugin](ht
 
 ![DownloadThunderClient](resources/dl-thunder-client.png)
 
-Un redemarrage de VS Code sera sans doute nécessaire.
+Un redémarrage de VS Code sera sans doute nécessaire.
 
 ### 🤔 Comment ça marche ?
 
