@@ -123,10 +123,9 @@ Mieux non ? 🤩
 
 Il ne "reste plus" qu'à ajouter bootstrap pour rendre ton site plus beau et le tour est joué !
 
-On se retrouve bientôt pour la partie 3 sur le **localStorage**.
+👉 La suite : [Partie 3](/article/dw/p5-bien-commencer-le-projet-part-3)
 
 ## 📚 Ressources utiles
 
-[Template string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
-
+[Template string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)  
 [Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)

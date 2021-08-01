@@ -9,7 +9,7 @@ Voyons cela ensemble !
 
 ### Mais comment je fais mon planning, qu'est-ce qui est vraiment attendu de moi ?
 
-Il est attendu de toi que établisses un planning du temps que tu vas consacrer, par semaine, à ta formation et aussi un planning sur les 6 à 12 mois à venir pour estimer les dates limites auxquelles tu vas présenter tes projets.
+Il est attendu de toi que tu établisses un planning du temps que tu vas consacrer, par semaine, à ta formation et aussi un planning sur les 6 à 12 mois à venir pour estimer les dates limites auxquelles tu vas présenter tes projets.
 
 ### Comment je fais ça et comment je peux savoir combien de temps je vais mettre pour un projet ?
 
@@ -25,7 +25,7 @@ P3 : tu as 70h de cours, ce qui donne un peu moins de 9 jours.
 Vu que maintenant tu connais HTML et CSS compte 5 bons jours pour le projet.  
 Ce qui ferait en tout environ 15 jours pour ce projet soit 3 semaines. 
 
-P4 : lis les cours et prends toi une journée pour faire le projet. En une semaine tu peux y arriver ! 
+P4 : lis les cours et prends-toi une journée pour faire le projet. En une semaine tu peux y arriver ! 
 
 Là tu devrais arriver vers la mi-parcours et avoir consacré environ 9 semaines à cette première partie.
 On rajoute une semaine de plus de sécurité, ce qui nous ramène à 10 semaines. 
@@ -33,7 +33,7 @@ On rajoute une semaine de plus de sécurité, ce qui nous ramène à 10 semaines
 P5 : Celui-là va être plus compliqué. Tu as environ une estimation de 90h de cours.
 Pour commencer lis les cours et fais les exercices proposés.
 Ensuite, pour compléter, rends-toi sur ce site [FreeCodeCamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/) et fais les exercices Basic Javascript et ES6. Ce n'est pas une perte de temps 😉
-En tout tu pourra consacrer 5 semaines à ce projet. 
+En tout tu pourras consacrer 5 semaines à ce projet. 
 
 P6 : Ce projet est plus rapide à réaliser que le P5, tu comprendras pourquoi en lisant le premier cours. 
 L'estimation est de 50h de cours. 
@@ -46,15 +46,15 @@ Avec les 10 semaines de la première partie nous arrivons à 24 semaines.
 
 Et maintenant à toi de jouer !
 
-Réalise ton planning par semaine en indiquant les moments où tu travaillera sur la formation puis fait un planning sur 6 mois, ou 12 mois si tu es en alternance, avec tes dates de fin de projet estimées !
+Réalise ton planning par semaine en indiquant les moments où tu travailleras sur la formation puis fais un planning sur 6 mois, ou 12 mois si tu es en alternance, avec tes dates de fin de projet estimées !
 
 ## Et pour l'outil de veille ?
 
 Dans le cours différents outils te seront proposés. 
-Testes les uns et les autres et vois lequel te convient le mieux. 🙃  
+Teste les uns et les autres et vois lequel te convient le mieux. 🙃  
 Feedly est plutôt pas mal car tu peux suivre des flux RSS de pas mal de sites web et chaines youtube. 
 
-Tu peux aussi suivre des comptes Twitter, t'abonner à des chaînes Youtube, t'abonner aux newsletter de sites spécialisés, rejoindre des Discords !
+Tu peux aussi suivre des comptes Twitter, t'abonner à des chaînes Youtube, t'abonner aux newsletters de sites spécialisés, rejoindre des serveurs Discord !
 
 Les moyens de se tenir informé sont nombreux et variés !
 
@@ -72,7 +72,7 @@ Et pour une recherche encore plus efficace utilise la langue anglaise !
 Si tu ne trouves pas ton bonheur tu peux demander à des vrais gens !  
 Pose tes questions sur le Workplace ou sur l'un des Discord cités en ressources utiles de cet article !  
 N'oublie pas d'indiquer que tu as déjà cherché avec tels et tels mots clés mais que tu n'as pas trouvé ton bonheur.  
-N'hésites pas à lancer des discussions, tu pourrais penser que sur certains Discords tout le monde se connait bien et tu peux appréhender le fait de poser une question mais n'ai aucune crainte personne ne te jugera, au contraire !
+N'hésite pas à lancer des discussions, tu pourrais penser que sur certains serveurs Discord tout le monde se connait bien et tu peux appréhender le fait de poser une question mais n'aie aucune crainte personne ne te jugera, au contraire !
 
 ## 📚 Ressources utiles
 
