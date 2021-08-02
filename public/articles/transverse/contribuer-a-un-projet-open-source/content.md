@@ -22,7 +22,7 @@ Si tu veux coder une fonctionnalité, le mieux avant de la faire est de créer u
 
 Dans l'univers de l'open source, tu vas souvent retrouver ces différents fichiers : 
 
-- _LICENSE_ : Un projet n'est pas _open source_ si il n'a pas de licence
+- _LICENSE_ : Un projet n'est pas _open source_ s'il n'a pas de licence
 - _README_ : Fichier qui présente le projet, mais qui peut aussi donner des informations sur la contribution
 - _CONTRIBUTING_ : Fichier spécifique à la contribution
 - _CODE_OF_CONDUCT_ : Code de conduite du projet, à respecter pour un environnement sain
@@ -50,17 +50,17 @@ Plusieurs possibilités :
 
 ### 😐 Pas de réponses
 
-Cela arrive, surtout si le projet est mort ou laissé un peu de côté, si cela fait un petit moment, n'hésite pas à tag des mainteneurs du projet et/ou de _up_, c'est à dire de mettre un message dans le fil de discussion de ta PR.
+Cela arrive, surtout si le projet est mort ou laissé un peu de côté, si cela fait un petit moment, n'hésite pas à tag des mainteneurs du projet et/ou de _up_, c'est-à-dire de mettre un message dans le fil de discussion de ta PR.
 
 ### 📦 Des modifications sont attendues
 
-C'est assez courant, si vous ne savez pas pourquoi ou comment faire les modifications, n'hésite pas à demander de l'aide, rappel toi que la communication est crucial dans l'open source 👍.  
-Si tu n'as pas le temps de faire les corrections, préviens les, pour que quelqu'un d'autre prenne le relais.
+C'est assez courant, si vous ne savez pas pourquoi ou comment faire les modifications, n'hésite pas à demander de l'aide, rappelle-toi que la communication est cruciale dans l'open source 👍.  
+Si tu n'as pas le temps de faire les corrections, préviens-les, pour que quelqu'un d'autre prenne le relais.
 
 ### 👎 Non acceptée
 
 Pour éviter que cela arrive, il est fortement recommandé de demander en amont du développement, si la fonctionnalité est "_mergeable_".  
-Si tu ne comprend pas la décision, tu peux continuer à maintenir ta version du projet, avec ton fork, de ton côté 😉.
+Si tu ne comprends pas la décision, tu peux continuer à maintenir ta version du projet, avec ton fork, de ton côté 😉.
 
 ### 👍 Acceptée
 
