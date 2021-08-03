@@ -1,0 +1,1 @@
+Très utile pour tester une API par exemple

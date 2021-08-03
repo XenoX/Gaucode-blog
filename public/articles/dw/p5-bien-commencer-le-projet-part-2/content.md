@@ -15,7 +15,8 @@ Et oui, ce sont des choses que nous avons déjà fait avec notre client API, il 
 ## 👨‍💻 Création du projet
 
 Je te conseille d'y aller étape par étape. On va dans un premier temps créer le dossier du projet, avec dedans, un fichier _index.html_ et un fichier _index.js_.  
-> 👉 Le Backend et le Frontend sont deux projets différents qui ne nécessitent pas d'être l'un dans l'autre ni même côte à côte.
+> 👉 Le Backend et le Frontend sont deux projets différents qui ne nécessitent pas d'être l'un dans l'autre ni même côte à côte. 
+> L'initialisation de git devra se faire dans ton dossier de projet frontend, qui ne contient pas le backend et non dans un dossier parent qui contient ton front et ton back
 
 Tu peux remplir ton fichier index.html : 
 
