@@ -16,12 +16,15 @@ On appelle ça une "API" (Application Programmation Interface).
 
 ### Front-end ?!
 
-C'est la parti visible par les visiteurs, dans notre cas ici, c'est un site Javascript mais ça peut aussi être une application mobile ou un client lourd (logiciel).  
+C'est la partie visible par les visiteurs, dans notre cas ici, c'est un site Javascript mais ça peut aussi être une application mobile ou un client lourd (logiciel).  
 Prenez par exemple une application sur ton téléphone, Instagram. Il existe l'application iOS, Android et le site internet. Ces trois projets "front" sont connectés à la même API, ce qui permet d'avoir les données à un seul endroit
 
 ![API Diagramme](resources/api_diagram.png)
 
 ## 🔧 Installation du projet back-end (API)
+
+> 👉 Afin d'éviter toutes les étapes de cette partie, tu peux héberger ton API sur Heroku en suivant ce tuto : [Héberger un projet NodeJS sur Heroku](/article/transverse/heberger-un-projet-nodejs-sur-heroku).
+> En faisant ça, il faudra remplacer "localhost" par ton nom de domaine heroku
 
 Si tu as bien suivi, ce projet est déjà fait et fonctionnel.  
 Mets-toi dans le dossier ou tu souhaites mettre l'API
@@ -40,10 +43,12 @@ Garde ton terminal de côté car si tu fermes la fenêtre, ça va arrêter l'API
 
 ### Tester l'API
 
+⚠️ Qu'on soit bien d'accord, ici on va tester l'API pour voir comment l'appeler et comment elle nous répond, ceci n'est pas une étape obligatoire pour votre projet, mais fortement recommandé pour être à l'aise pour la suite.
+
 Maintenant que l'API est lancée, tu peux lui demander des informations, pour cela on va installer un **client API**, tu peux prendre [Insomnia API](https://insomnia.rest/) ou [Postman](https://www.postman.com/).  
 Le premier étant plus simple, le deuxième est plus complet.
 
-👉 _Tu peux aussi le faire directement sur VSCode en suivant cette article : [Arretez d'utiliser Postman](/article/transverse/arretez-d-utiliser-postman)_
+> 👉 _Tu peux aussi le faire directement sur VSCode en suivant cette article : [Arretez d'utiliser Postman](/article/transverse/arretez-d-utiliser-postman)_
 
 Dans les spécifications du projet, tu peux voir 3 **endpoints** :
 
