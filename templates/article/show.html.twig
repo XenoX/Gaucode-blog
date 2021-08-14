@@ -36,15 +36,15 @@
 
         const codes = document.getElementsByTagName('code');
         for (let code of codes) {
-            const spaceIndex = code.firstChild.textContent.indexOf('\n');
-            const language = spaceIndex === -1 ? code.firstChild.textContent : code.firstChild.textContent.substr(0, spaceIndex);
+            const spaceIndex = code.textContent.indexOf('\n');
+            const language = spaceIndex === -1 ? code.textContent : code.textContent.substr(0, spaceIndex);
             let comment = ['php', 'shell', 'bash'].includes(language) ? '#' : '//';
             if (language === 'html') {
                 comment = '<!--';
-                code.firstChild.textContent = code.firstChild.textContent.substring(0, spaceIndex) + ' -->' + code.firstChild.textContent.substring(spaceIndex);
+                code.textContent = code.textContent.substring(0, spaceIndex) + ' -->' + code.textContent.substring(spaceIndex);
             }
 
-            code.firstChild.textContent = `${comment} ${code.firstChild.textContent}`;
+            code.textContent = `${comment} ${code.textContent}`;
 
             code.classList.add(`language-${language}`);
 
