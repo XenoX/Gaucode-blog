@@ -69,8 +69,8 @@ Le même code en version bien indenté :
 ```
 
 C'est tout de suite plus clair non ? Cela va te permettre de remarquer rapidement si tu as oublié de fermer une balise, 
-car quand tu ouvres une balise (ou un bloc en JS, tel qu'une condition ou une boucle, par exemple), sont contenu doit être indenté 
-(avoir une marge de quatre espaces). La balise fermante doit être sur la même "ligne" vertical que la balise ouvrante.
+car quand tu ouvres une balise (ou un bloc en JS, tel qu'une condition ou une boucle, par exemple), son contenu doit être indenté 
+(avoir une marge de quatre espaces). La balise fermante doit être sur la même "ligne" verticale que la balise ouvrante.
 
 > 👉 Pour indenter une ou plusieurs lignes, tu peux les sélectionner et appuyer sur la touche "tabulation".  
 > 👉 Pour "dé-indenter" une ou plusieurs lignes, tu peux les sélectionner et appuyer sur les touches "maj" et "tabulation".
@@ -120,7 +120,7 @@ Je te conseille donc de vérifier assez souvent ton avancement, cela réduit le 
 se présente. Pour du HTML/CSS, tu peux rafraichir la page souvent, pour du JS, je te conseille de faire beaucoup de console.log() 
 pour vérifier que tu as les données que tu désires.
 
-> 👉 Si tu dois console.log() un tableau, la méthode console.table() est plus visuel.
+> 👉 Si tu dois console.log() un tableau, la méthode console.table() est plus visuelle.
 
 ## 🤓 Comment réagir face à une erreur ?
 
@@ -129,12 +129,12 @@ Première chose : Ne pas paniquer, c'est normal d'avoir des erreurs, c'est grâc
 ### 🔥 Erreur "visuelle" (HTML/CSS)
 
 Pour résoudre une erreur visuelle (HTML/CSS), votre navigateur vous donne accès à des outils de développement. 
-Pour lancer l'inspecteur d'éléments, c'est la touche F12, tu peux aussi faire un clique droit sur ton élément HTML et 
+Pour lancer l'inspecteur d'éléments, c'est la touche F12, tu peux aussi faire un clic droit sur ton élément HTML et 
 cliquer sur "Inspecter l'élément" (le message dépend du navigateur)
 
 ![Inspecteur](resources/inspector_1.jpg)
 
-Sur le screenshot ci-dessus, tu peux voir mon inspecteur d'élément (j'ai changé le thème, le tiens sera peut-être blanc).  
+Sur le screenshot ci-dessus, tu peux voir mon inspecteur d'élément (j'ai changé le thème, le tien sera peut-être blanc).  
 
 - Sur la première partie, celle de gauche, c'est le code HTML de la page, tu peux déplier les éléments et passer ton curseur 
 sur les balises pour mettre le bloc en surbrillance, et ainsi afficher sur ce bloc, ses dimensions, ses bordures (border), 
@@ -154,14 +154,14 @@ Dès que tu vas avoir une erreur en javascript, celle-ci se retrouvera dans la c
 dans ton inspecteur. C'est ici aussi que tu retrouveras tes console.log().
 > 👉 Regarde bien si tu n'as pas des filtres qui masques certaines erreurs.
 
-C'est bête, mais c'est très important de bien lire l'erreur et de bien le comprendre, souvent on a tendance à la lire 
-rapidement et d'ouvrir son code pour chercher la solution.  
+C'est bête, mais c'est très important de bien lire l'erreur et de bien la comprendre, souvent on a tendance à la lire 
+rapidement et à ouvrir son code pour chercher la solution.  
 Si c'est une de tes fonctions qui ne fonctionne pas et que l'erreur ne te parle pas, tu peux mettre des console.log() 
 avec dedans des variables ou du texte, pour connaitre le contenu de ta variable, si tu mets du texte, c'est souvent 
 pour vérifier que ton code passe bien par là.
 
 Dans la console de ton navigateur tu peux aussi écrire du javascript directement si tu veux tester un bout de code rapidement.
 
-L'inspecteur d'élément et la console sont tes alliés ! Abuse s'en !
+L'inspecteur d'élément et la console sont tes alliés ! Abuses-en !
 
 
