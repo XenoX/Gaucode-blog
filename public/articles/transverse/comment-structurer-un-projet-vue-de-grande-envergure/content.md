@@ -1,6 +1,6 @@
 ## Introduction
 
-Quelle est la meilleure façon de **structurer une application Vue.js** pour qu'elle reste maintenable et extensible au fur et à mesure qu'elle évolue ? C'est une question que je me suis posé et que j'ai entendue à de nombreuses reprises et je pense que la réponse à cette question n'est pas des plus simple. Lorsqu'il s'agit de créer un projet évolutif, nous voudrions avoir tout prévu et que tout soit **sous contrôle.**
+Quelle est la meilleure façon de **structurer une application Vue.js** pour qu'elle reste maintenable et extensible au fur et à mesure qu'elle évolue ? C'est une question que je me suis posée et que j'ai entendue à de nombreuses reprises et je pense que la réponse à cette question n'est pas des plus simples. Lorsqu'il s'agit de créer un projet évolutif, nous voudrions avoir tout prévu et que tout soit **sous contrôle.**
 
 D'après mon expérience et ce que j'ai pu lire et voir au cours de mes projets, la clé **c'est la simplicité.**
 
@@ -28,7 +28,7 @@ Pour la suite, il est essentiel de connaître les conventions et nomenclatures c
 
 Pour toutes les raisons évoquées ci-dessus, je suggère d'adopter la norme d'un répertoire de composants de type **Flat**. Cela représente les avantages suivants :
 
-- Accédez rapidement et facilement à un d'un composant dans Vue devtools ou la recherche du fichier dans la base de code (le nom du fichier et le nom du composant sont les mêmes)
+- Accédez rapidement et facilement à un composant dans Vue devtools ou la recherche du fichier dans la base de code (le nom du fichier et le nom du composant sont les mêmes)
 
 - Utilisez la fonction de recherche rapide dans votre IDE pour filtrer les fichiers en fonction de leur attribut du plus général jusqu'au plus spécifique.
 
@@ -74,7 +74,7 @@ Il faut noter que toutes les routes ne correspondront pas exactement à ce modè
 
 ### Autres dossiers utilitaires
 
-Voici à quoi ressemblerai la structure finale d'un large projet Vue :
+Voici à quoi ressemblerait la structure finale d'un large projet Vue :
 
 ![AdvancedDirectory](resources/advanced-directory.jpg)
 
@@ -104,7 +104,7 @@ Comme son nom l'indique, ce dossier regroupe tous les mixins de votre applicatio
 
 - **plugins**
 
-La dernier repertoire permet d'inclure tous les plugins. En effet avec tous les packages que vous pouvez télécharger et configurer, il est importer de pouvoir ranger ces configurations dans un reportoire spécifique.
+La dernier répertoire permet d'inclure tous les plugins. En effet avec tous les packages que vous pouvez télécharger et configurer, il est important de pouvoir ranger ces configurations dans un reportoire spécifique.
 
 - **globals.js**
 
