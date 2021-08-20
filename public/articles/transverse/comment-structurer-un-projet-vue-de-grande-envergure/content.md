@@ -14,7 +14,7 @@ Avant de rentrer dans le vif du sujet, il est important de noter que cette méth
 
 ### 📂 Structure de fichier standard
 
-Bien que Vue n'ait pas de documentation spécifiant **une structure particulière**, elle fournit un bon point de départ avec de la base de code générée avec [Vue CLI](https://cli.vuejs.org/).
+Bien que Vue n'ait pas de documentation spécifiant **une structure particulière**, elle fournit un bon point de départ avec la base de code générée par [Vue CLI](https://cli.vuejs.org/).
 
 ![StandardStructure](resources/standard-structure.jpg)
 
@@ -34,7 +34,7 @@ Pour toutes les raisons évoquées ci-dessus, je suggère d'adopter la norme d'u
 
 - Supprimez la paralysie de l'analyse lorsqu'il s'agit de décider comment organiser les composants en répertoires.
 
-- Être capable de voir tous vos composants à la fois dans une seule liste
+- Possibilité de voir tous vos composants à la fois dans une seule liste.
 Débarrassez-vous de la redondance des mots-clés dans les noms de fichiers ET dans le répertoire (c'est-à-dire post/PostList.vue, post/PostFeature.vue, etc.)
 
 - Supprimez la tentation d'utiliser des noms de composants courts composés d'un mot, ce qui est plus facile à faire avec des répertoires imbriqués (c'est-à-dire post/List.vue, post/Feature.vue ) et ne suit pas le Style Guide de Vue.
@@ -47,7 +47,7 @@ Bon, à quoi ressemble une structure "Flat"" qui suit le Style Guide de Vue ? Vo
 
 ![FlatDirectory](resources/flat-directory.jpg)
 
-Bien que votre application puisse évidemment **beaucoup plus de fichiers**, ce n'est pas pénalisant et vous retrouverez tous les composants de votre application dans une seule liste **bien organisée**.
+Bien que votre application puisse évidemment avoir **beaucoup plus de fichiers**, ce n'est pas pénalisant et vous retrouverez tous les composants de votre application dans une seule liste **bien organisée**.
 
 ### 🎯 Convention de nommage des routes et pages
 
