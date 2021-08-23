@@ -1,6 +1,6 @@
-Je vais commencer par mettre un peu de contexte, car cet article est écrit en fonction de mon point de vue et de mes expériences, aussi bien en tant que candidats que recruteurs.
+Je vais commencer par mettre un peu de contexte, car cet article est écrit en fonction de mon point de vue et de mes expériences, aussi bien en tant que candidat que recruteur.
 
-J'ai réalisé un peu d'entretien d'embauche, un peu plus d'entretiens de missions (je suis dans une ESN), et j'ai fait passer beaucoup d'entretiens, au final j'ai plus d'expérience en tant que recruteur que candidat.
+J'ai réalisé un peu d'entretiens d'embauche, un peu plus d'entretiens de missions (je suis dans une ESN), et j'ai fait passer beaucoup d'entretiens, au final j'ai plus d'expérience en tant que recruteur que candidat.
 
 ## 📢 Le marché
 
