@@ -29,7 +29,7 @@ Souvent, je vois : "VSCode, VSCodium, VSStudio, PHPStorm, Eclipse, Notepad++, Co
 **Attention aux fautes** dans le nom des technos, combien de fois je vois "Boostrap" ou "Symphony", pour moi c'est rédhibitoire.
 > J'ai déjà vu "DQL avec Doctrine", DQL voulant dire _Doctrine Query Language_, je me suis vite aperçu de son niveau en DQL...
 
-**Attention à l'auto-évaluation de tes compétences**, sous forme de bar de progression par exemple, personnellement je n'aime pas cela et quand un candidat se met 9/10 dans une techno, j'ai envie de tester ses connaissances pour vérifier ça. C'est très difficile d'avoir 9/10 dans une techno, tellement c'est vaste.  
+**Attention à l'auto-évaluation de tes compétences**, sous forme de barre de progression par exemple, personnellement je n'aime pas cela et quand un candidat se met 9/10 dans une techno, j'ai envie de tester ses connaissances pour vérifier ça. C'est très difficile d'avoir 9/10 dans une techno, tellement c'est vaste.  
 
 ![Courbe de Dunning Kruger](resources/courbe_DUNNING_KRUGER.gif)
 
