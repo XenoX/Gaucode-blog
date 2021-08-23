@@ -5,9 +5,9 @@ J'ai réalisé un peu d'entretiens d'embauche, un peu plus d'entretiens de missi
 ## 📢 Le marché
 
 Oui, le marché recrute MAIS, le niveau d'exigence est assez haut par rapport à la réalité du marché.  
-Si tu es junior, tu vas avoir du mal à trouver un emploi (désolé de te l'apprendre 😨). Le marché est saturé de junior (bons ou mauvais).
+Si tu es junior, tu vas avoir du mal à trouver un emploi (désolé de te l'apprendre 😨). Le marché est saturé de juniors (bons ou mauvais).
 
-C'est pour cela que, quand on cherche un développeur avec 5 ans d'expérience, nous recevons une 50ène de CV de junior qui viennent de sortir d'école ou de "bootcamp" (formations accélérés qui promettent la lune en 6mois).
+C'est pour cela que, quand on cherche un développeur avec 5 ans d'expérience, nous recevons une 50^(aine) de CV de juniors qui viennent de sortir d'école ou de "bootcamp" (formations accélérées qui promettent la Lune en 6 mois).
 
 HEUREUSEMENT, il y a des astuces qui permettent de se démarquer et d'au moins passer la phase de sélection des CV.
 
