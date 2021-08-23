@@ -35,7 +35,7 @@ Souvent, je vois : "VSCode, VSCodium, VSStudio, PHPStorm, Eclipse, Notepad++, Co
 
 ## 🗒 Phase 2 : Résumé de tes missions & projets
 
-Pour accompagner ton CV, tu peux  aussi envoyer un document qui explique un peu plus en détails tes _expériences professionnelles_ et tes _projets personnels_.
+Pour accompagner ton CV, tu peux aussi envoyer un document qui explique un peu plus en détails tes _expériences professionnelles_ et tes _projets personnels_.
 
 Cela va permettre au recruteur qui lit ton CV, d'en savoir plus s'il est intéressé.  
 Dans ce document, tu peux faire une page par mission en détaillant la mission :
