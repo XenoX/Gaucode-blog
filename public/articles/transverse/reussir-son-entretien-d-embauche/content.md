@@ -59,7 +59,7 @@ Pour le **code vestimentaire**, vu que nous sommes dans le domaine de l'informat
 
 ## ⭐️ Autre 
 
-Si tu as des projets personnels et je t'encourage fortement à en avoir pour te démarquer, n'en ai pas honte, met-les dans tes expériences sur ton CV et parle en lors de l'entretien.
+Si tu as des projets personnels et je t'encourage fortement à en avoir pour te démarquer, n'en aie pas honte, mets-les dans tes expériences sur ton CV et parles-en lors de l'entretien.
 
 Pareil pour tes passions, cela t'humanise, car au-delà de recruter un développeur, on recrute un futur collègue avec qui on va passer du temps, penses-y ;)
 
