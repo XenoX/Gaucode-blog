@@ -49,13 +49,13 @@ Dans ce document, tu peux faire une page par mission en détaillant la mission :
 
 ## 🤝 Phase 3 : L'entretien
 
-Pense a **préparer ton entretien** au minimum, c'est-à-dire te renseigner sur l'entreprise, tu dois bien connaitre l'offre d'emploi, lis la plusieurs fois, si certains termes ou technos ne te disent rien, fait une petite recherche pour au moins savoir à quoi ça sert.
+Pense à **préparer ton entretien** au minimum, c'est-à-dire te renseigner sur l'entreprise, tu dois bien connaitre l'offre d'emploi, lis-la plusieurs fois, si certains termes ou technos ne te disent rien, fais une petite recherche pour au moins savoir à quoi ça sert.
 
-**N'ai pas honte de ne pas savoir**, pour être recruté, tu ne dois pas cocher toutes les cases, s'il y a une techno que tu ne connais pas, n'hésite pas à dire que tu ne connais pas et que tu souhaites en savoir plus. Soit curieux !
+**N'aie pas honte de ne pas savoir**, pour être recruté, tu ne dois pas cocher toutes les cases, s'il y a une techno que tu ne connais pas, n'hésite pas à dire que tu ne connais pas et que tu souhaites en savoir plus. Sois curieux !
 
-Pour le **code vestimentaire**, vu que nous sommes dans le domaine de l'informatique, une tenue "de tous les jours" suffit, personnellement j'ai tendance à me méfier des gens trop bien habillés, en costard par exemple. D'après mon expérience, quand on misent sur la forme, c'est pour compenser le fond.
+Pour le **code vestimentaire**, vu que nous sommes dans le domaine de l'informatique, une tenue "de tous les jours" suffit, personnellement j'ai tendance à me méfier des gens trop bien habillés, en costard par exemple. D'après mon expérience, quand on mise sur la forme, c'est pour compenser le fond.
 
-**Soit naturel !** Ne te met pas la pression et sache qu'un entretien c'est dans les deux sens, l'entreprise doit aussi donner une bonne image pour que tu veuilles accepter la mission. Personnellement j'ai refusé des missions suite aux comportements des recruteurs que je n'ai pas appréciés.
+**Sois naturel !** Ne te mets pas la pression et sache qu'un entretien c'est dans les deux sens, l'entreprise doit aussi donner une bonne image pour que tu veuilles accepter la mission. Personnellement j'ai refusé des missions suite aux comportements des recruteurs que je n'ai pas appréciés.
 
 ## ⭐️ Autre 
 
