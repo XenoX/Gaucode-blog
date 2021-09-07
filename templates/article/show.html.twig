@@ -10,7 +10,7 @@
                     <div class="post-heading">
                         <h1>{{ article.title }}</h1>
                         <h2 class="subheading">{{ article.subtitle }}</h2>
-                        <span class="meta">Ecrit par {{ article.author }}</span>
+                        <span class="meta">Écrit par <a href="{{ path('app_author_profile', {'author': article.author}) }}">{{ article.author }}</a></span>
                     </div>
                 </div>
             </div>

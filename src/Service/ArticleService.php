@@ -39,7 +39,7 @@ class ArticleService
             'slug' => $slug,
             'title' => $this->getFileContent($slug, self::TITLE_FILENAME),
             'shortname' => $this->getFileContent($slug, self::SHORTNAME_FILENAME),
-            'articles' => $this->getArticles($slug),
+            'articles' => $this->getArticlesForCategory($slug),
         ];
     }
 
@@ -69,13 +69,23 @@ class ArticleService
         return sprintf('%s/%s/%s', self::FOLDER, $category, self::BANNER_FILENAME);
     }
 
-    private function getArticles(string $category): array
+    public function getArticlesForCategory(string $category): array
     {
         $articlesPath = sprintf('%s/%s/%s/%s/*', $this->projectDir, 'public', self::FOLDER, $category);
         $articles = [];
 
         foreach ($this->sanitizePaths(glob($articlesPath, GLOB_ONLYDIR)) as $slug) {
             $articles[] = $this->getArticle($category, $slug);
+        }
+
+        return $articles;
+    }
+
+    public function getArticles(): array
+    {
+        $articles = [];
+        foreach ($this->getCategories() as $category) {
+            $articles = array_merge($articles, $this->getArticlesForCategory($category));
         }
 
         return $articles;

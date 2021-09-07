@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Service\AuthorService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -19,9 +20,11 @@ class AppController extends AbstractController
     /**
      * @Route("/contribuer")
      */
-    public function contribute(): Response
+    public function contribute(AuthorService $authorService): Response
     {
-        return $this->render('app/contribute.html.twig', []);
+        return $this->render('app/contribute.html.twig', [
+            'authors' => $authorService->getAuthors(),
+        ]);
     }
 
     /**

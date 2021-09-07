@@ -95,6 +95,14 @@ Le lien de l'image peut-être relatif (image dans le dossier du projet) ou absol
 
             <h2>Tu remarques un bug ou tu as une idée de fonctionnalité ?</h2>
             <p>Pour cela, je t'invite à faire une <a href="https://github.com/XenoX/Gaucode-blog/issues" target="_blank">issue</a> sur le repository, en expliquant le bug ou à quel point ta fonctionnalité est superbe !</p>
+
+            <h2>Merci aux contributeurs ❤️</h2>
+            <br>
+            <ul>
+                {% for name, nb in authors %}
+                    <li><a href="{{ path('app_author_profile', {'author': name}) }}">{{ name }}</a></li>
+                {% endfor %}
+            </ul>
         </div>
     </main>
 {% endblock %}
