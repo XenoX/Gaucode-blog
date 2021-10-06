@@ -24,7 +24,7 @@
                 {% for article in category.articles %}
                     <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
                         <a href="{{ path('app_article_show', {'category': category.slug, 'slug': article.slug}) }}">
-                            <div class="card">
+                            <div class="card h-100">
                                 <img class="card-img-top" src="{{ asset(getBannerPath(category.slug, article.slug)) }}" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">{{ article.title }}</h5>
