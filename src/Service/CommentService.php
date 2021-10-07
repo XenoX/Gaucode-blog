@@ -10,7 +10,7 @@ use \DateTime;
 
 class CommentService
 {
-    const FOLDER = 'articles';
+    const FOLDER = ArticleService::FOLDER;
 
     const COMMENTS_FOLDER = 'comments';
     const COMMENTS_AUTHOR_FILENAME = 'author.md';
