@@ -18,12 +18,10 @@ class CommentService
     const COMMENTS_DATE_FILENAME = 'date.md';
     
     private string $projectDir;
-    private PaginatorInterface $paginator;
 
-    public function __construct(string $projectDir, PaginatorInterface $paginator)
+    public function __construct(string $projectDir)
     {
         $this->projectDir = $projectDir;
-        $this->paginator = $paginator;
     }
 
     public function createComment(string $category, string $slug, string $username, string $content)
@@ -49,19 +47,14 @@ class CommentService
         );
     }
 
-    public function getArticleComments(string $category, string $slug, int $page)
+    public function getArticleComments(string $category, string $slug,)
     {
         $commentsFolder = $this->getFullPath($category, $slug);
         if (!file_exists($commentsFolder)) {
             mkdir($commentsFolder, 0777, true);
         }
         
-        $comments = $this->readComments($commentsFolder);
-        return $this->paginator->paginate(
-            $comments,
-            $page,
-            15
-        );
+        return array_reverse($this->readComments($commentsFolder));
     }
 
     private function readComments(string $path)
