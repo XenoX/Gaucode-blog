@@ -26,6 +26,9 @@
     "egulias/email-validator": {
         "version": "3.1.1"
     },
+    "fakerphp/faker": {
+        "version": "v1.16.0"
+    },
     "friendsofphp/proxy-manager-lts": {
         "version": "v1.0.5"
     },
@@ -259,6 +262,9 @@
             ".env"
         ]
     },
+    "symfony/form": {
+        "version": "v5.3.8"
+    },
     "symfony/framework-bundle": {
         "version": "5.3",
         "recipe": {
@@ -335,6 +341,9 @@
             "config/packages/test/monolog.yaml"
         ]
     },
+    "symfony/options-resolver": {
+        "version": "v5.3.7"
+    },
     "symfony/orm-pack": {
         "version": "v2.1.0"
     },
@@ -354,6 +363,9 @@
         ]
     },
     "symfony/polyfill-intl-grapheme": {
+        "version": "v1.23.0"
+    },
+    "symfony/polyfill-intl-icu": {
         "version": "v1.23.0"
     },
     "symfony/polyfill-intl-idn": {
