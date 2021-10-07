@@ -14,8 +14,13 @@ Tu es libre de modifier et créer des articles mais aussi de réaliser ou corrig
 
 Tout d'abord, il faut que tu _fork_ le repository pour l'avoir dans ton espace GitHub.
 
-Une fois fait, tu peux _cloner_ le repository sur ta machine. Faire tes ajouts ou changements, faire une branche, commit et la pousser sur ton repository.  
+Une fois fait, tu peux _cloner_ le repository sur ta machine. Faire tes ajouts ou changements, faire une branche, commit et la pousser sur ton repository.
 Quand tu es fier du résultat, tu peux faire une _PR (Pull Request)_ vers ce repository, sur la branche _main_ (la PR se fait sur le site GitHub)
+
+### 📂 Installation
+
+Une fois le repo forké et cloné, crées-toi une nouvelle branche et commence à travailler dessus.  
+Si jamais tu souhaites faire des modifications/ajouts au code, tu peut installer les dépendances en exécutant la commande ``composer install`` , et créer des fausses données de test pour les commentaires avec la commande ``php -f Fixtures.php`` .
 
 ### ✏️ Conventions
 
