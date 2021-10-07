@@ -1,1 +1,1 @@
-Utilisez Linux sur Windos grâce à VSCode
+Utilisez Linux sur Windows grâce à VSCode

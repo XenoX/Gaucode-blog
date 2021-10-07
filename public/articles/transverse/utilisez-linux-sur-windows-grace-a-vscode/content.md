@@ -12,13 +12,14 @@ Mais ce n'est pas le sujet de cet article 😅
 
 Ici nous allons voir comment faire pour utiliser le terminal et tout **l'environnement de Linux** sans quitter Windows grâce à une simple extension. C'est possible grâce à la technologie  WSL de Windows, l'acronyme de Windows subsystem for Linux.
 
-Cette technologie, qui est version 2 à l'heure où j'écris ces lignes, est super intéressante, elle vous permet d'exécuter **un environnement Linux directement sur Windows**, sans la surcharge d'une machine virtuelle traditionnelle ou d'une configuration en dual boot 😎
+Cette technologie, qui est en version 2 à l'heure où j'écris ces lignes, est super intéressante, elle vous permet d'exécuter **un environnement Linux directement sur Windows**, sans la surcharge d'une machine virtuelle traditionnelle ou d'une configuration en dual boot 😎
 
 Lorsque vous installez une version de Linux sur Windows grâce à WSL, vous obtenez un environnement Linux complet. Il est **isolé de Windows**, l'interface utilisateur est le terminal et vous pouvez installer des outils, des langages et des compilateurs dans l'environnement Linux **sans modifier** ni **perturber** votre installation Windows.
 
-La puissance de VSCode nous permet de centraliser tous ces outils géniaux et c'est un luxe en tant que développeur. Si ça vous intéresse, on passe à l'installation !
+La puissance de VSCode nous permet de centraliser tous ces outils géniaux et c'est un luxe en tant que développeur. Si ça vous intéresse, on passe à **l'installation** !
 
 ### 🔧 Installation
+
 
 #### Installer le plugin
 
