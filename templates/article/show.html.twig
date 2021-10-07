@@ -24,6 +24,25 @@
             {{ article.content|raw }}
         </div>
     </article>
+    <section id="comments" class="border-top">
+        <div class="container px-3 py-2 px-lg-4">
+            {% for comment in comments %}
+            <div class="card p-3 mt-2">
+                <div class="d-flex flex-column">
+                    <div class="user d-flex flex-column">
+                        <small class="font-weight-bold text-primary">{{ comment.author }}</small>
+                    <span class="comment-content">
+                        {{ comment.content|raw }}
+                    </span> 
+                    </div> 
+                    <small class="text-end">
+                    <time>Il y a 3 jours</time>
+                    </small>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
 {% endblock %}
 
 {% block javascripts %}
