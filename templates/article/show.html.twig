@@ -48,7 +48,7 @@
                         {{ comment.content|raw }}
                     </span>
                     <small class="text-end">
-                        <time datetime="{{ comment.date }}">{{ comment.date}}</time>
+                        <time datetime="{{ comment.date }}">Le {{ comment.date|date("d/m/Y\ \à\ H:i:s") }}</time>
                     </small>
             </div>
             {% endfor %}
