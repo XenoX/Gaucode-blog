@@ -17,3 +17,12 @@
 /phpunit.xml
 .phpunit.result.cache
 ###< phpunit/phpunit ###
+
+###> IDE Config ###
+.vscode/
+.idea/
+###< IDE Config ###
+
+###> Data ###
+public/articles/*/*/comments/*
+###< Data ###
