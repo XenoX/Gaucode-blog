@@ -53,12 +53,9 @@
             </div>
             {% endfor %}
         </div>
-        <table>
-            <tr>
-                {# sorting of properties based on query components #}
-                <th>{{ knp_pagination_sortable(comments, 'Date', 'c.date') }}</th>
-            </tr>
-        </table>
+        <div class="navigation w-full d-flex justify-content-center">
+            {{ knp_pagination_render(comments) }}
+        </div>
     </section>
 {% endblock %}
 
