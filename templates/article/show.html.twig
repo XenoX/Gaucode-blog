@@ -24,24 +24,41 @@
             {{ article.content|raw }}
         </div>
     </article>
+    <section id="comment-form" class="border-top">
+        <div class="container px-3 py-2 px-lg-4">
+            <h2>Donnez votre avis sur l'article</h2>
+            {{ form_start(form, {attr: { class: "d-flex flex-column align-items-center" } }) }}
+            <div class="mb-3 w-100">
+                {{ form_row(form.username) }}
+            </div>
+            <div class="mb-3 w-100">
+                {{ form_row(form.content) }}
+            </div>
+            {{ form_end(form) }}
+        </div>
+    </section>
     <section id="comments" class="border-top">
         <div class="container px-3 py-2 px-lg-4">
             {% for comment in comments %}
-            <div class="card p-3 mt-2">
-                <div class="d-flex flex-column">
-                    <div class="user d-flex flex-column">
-                        <small class="font-weight-bold text-primary">{{ comment.author }}</small>
-                    <span class="comment-content">
-                        {{ comment.content|raw }}
-                    </span> 
-                    </div> 
-                    <small class="text-end">
-                    <time>Il y a 3 jours</time>
+            <div class="card p-3 mt-2 d-flex flex-column">
+                    <small class="font-weight-bold text-primary">
+                        {{ comment.author }}
                     </small>
-                </div>
+                    <span>
+                        {{ comment.content|raw }}
+                    </span>
+                    <small class="text-end">
+                        <time datetime="{{ comment.date }}">{{ comment.date}}</time>
+                    </small>
             </div>
             {% endfor %}
         </div>
+        <table>
+            <tr>
+                {# sorting of properties based on query components #}
+                <th>{{ knp_pagination_sortable(comments, 'Date', 'c.date') }}</th>
+            </tr>
+        </table>
     </section>
 {% endblock %}
 
