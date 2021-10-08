@@ -26,7 +26,7 @@
                         <a href="{{ path('app_article_show', {'category': category.slug, 'slug': article.slug}) }}">
                             <div class="card h-100">
                                 <img class="card-img-top" src="{{ asset(getBannerPath(category.slug, article.slug)) }}" alt="Card image cap">
-                                <div class="card-body">
+                                <div class="card-body d-flex flex-column flex-nowrap justify-content-between">
                                     <h5 class="card-title">{{ article.title }}</h5>
                                     <p class="card-text">{{ article.subtitle }}</p>
                                     <small class="text-muted">{{ article.author }}</small>
