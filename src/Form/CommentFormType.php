@@ -3,7 +3,6 @@
 namespace App\Form;
 
 use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -27,7 +26,7 @@ class CommentFormType extends AbstractType
                     ]),
                 ]
             ])
-            ->add("content", TextareaType::class, [
+            ->add('content', TextareaType::class, [
                 'required' => true,
                 'label' => 'Commentaire',
                 'constraints' => [
@@ -38,7 +37,6 @@ class CommentFormType extends AbstractType
                     ]),
                 ]
             ])
-            ->add("submit", SubmitType::class)
         ;
     }
 
