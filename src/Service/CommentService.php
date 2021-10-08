@@ -1,17 +1,14 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Service;
 
 use Exception;
-use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
-use Michelf\Markdown;
-use \DateTime;
 
 class CommentService
 {
-    const FOLDER = ArticleService::FOLDER;
-
     const COMMENTS_FOLDER = 'comments';
     const COMMENTS_AUTHOR_FILENAME = 'author.md';
     const COMMENTS_CONTENT_FILENAME = 'content.md';
@@ -24,14 +21,14 @@ class CommentService
         $this->projectDir = $projectDir;
     }
 
-    public function createComment(string $category, string $slug, string $username, string $content)
+    public function create(string $category, string $slug, string $username, string $content)
     {
         $commentsFolder = $this->getFullPath($category, $slug);
-        $id = uniqid();
-        $postDate = (new DateTime())->format("c");
-        $fullPath = $commentsFolder . $id;
 
-        mkdir($fullPath, 0777, true);
+        $postDate = date("c");
+        $fullPath = $commentsFolder . uniqid();
+
+        mkdir($fullPath);
 
         $this->createFile(
             $this->getRealPath($fullPath, self::COMMENTS_AUTHOR_FILENAME),
@@ -47,11 +44,11 @@ class CommentService
         );
     }
 
-    public function getArticleComments(string $category, string $slug,)
+    public function getArticleComments(string $category, string $slug)
     {
         $commentsFolder = $this->getFullPath($category, $slug);
         if (!file_exists($commentsFolder)) {
-            mkdir($commentsFolder, 0777, true);
+            mkdir($commentsFolder);
         }
         
         return array_reverse($this->readComments($commentsFolder));
@@ -77,7 +74,7 @@ class CommentService
 
         try {
             $author = file_get_contents($author_path);
-            $content = Markdown::defaultTransform(file_get_contents($content_path));
+            $content = file_get_contents($content_path);
             $date = file_get_contents($date_path);
         } catch (Exception $exception) {
             throw new NotFoundHttpException();
@@ -101,6 +98,6 @@ class CommentService
     }
     private function getFullPath(string $category, string $slug)
     {
-        return sprintf('%s/%s/%s/%s/%s/', $this->projectDir, 'public', self::FOLDER, $this->getRealPath($category, $slug), self::COMMENTS_FOLDER);
+        return sprintf('%s/%s/%s/%s/%s/', $this->projectDir, 'public', ArticleService::FOLDER, $this->getRealPath($category, $slug), self::COMMENTS_FOLDER);
     }
 }
