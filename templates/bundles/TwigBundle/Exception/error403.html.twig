@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Erreur 404 -
+	{{ parent() }}
+{% endblock %}
+
+{% block header %}
+	<header class="masthead" style="background-image: url({{ asset('img/error.jpg') }})">
+		<div class="container position-relative px-4 px-lg-5">
+			<div class="row gx-4 gx-lg-5 justify-content-center">
+				<div class="col-md-10 col-lg-8 col-xl-7">
+					<div class="post-heading">
+						<h1>Erreur 403</h1>
+						<h2 class="subheading">Accès refusé</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+{% endblock %}
+
+{% block body %}
+	<main class="mb-4">
+		<div class="container px-3 px-lg-4">
+			<p>
+				Désolé, tu n'as pas l'autorisation d'afficher cette page.<br>
+				{{ exception.message }}<br>
+				Je t'invite à
+				<a href="{{ path('app_app_index') }}">revenir à la page d'accueil</a>.
+			</p>
+		</div>
+	</main>
+{% endblock %}
