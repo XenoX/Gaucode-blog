@@ -34,6 +34,9 @@
             <div class="mb-3 w-100">
                 {{ form_row(form.content) }}
             </div>
+            <div class="mb-3 w-100">
+                <button class="btn-primary btn">Envoyer</button>
+            </div>
             {{ form_end(form) }}
         </div>
     </section>
@@ -41,20 +44,17 @@
         <div class="container px-3 py-2 px-lg-4">
             {% for comment in comments %}
             <div class="card p-3 mt-2 d-flex flex-column">
-                    <small class="font-weight-bold text-primary">
-                        {{ comment.author }}
-                    </small>
-                    <span>
-                        {{ comment.content|raw }}
-                    </span>
-                    <small class="text-end">
-                        <time datetime="{{ comment.date }}">Le {{ comment.date|date("d/m/Y\ \à\ H:i:s") }}</time>
-                    </small>
+                <small class="font-weight-bold text-primary">
+                    {{ comment.author }}
+                </small>
+                <span>
+                    {{ comment.content }}
+                </span>
+                <small class="text-end">
+                    <time datetime="{{ comment.date }}">Le {{ comment.date|date("d/m/Y\ \à\ H:i:s") }}</time>
+                </small>
             </div>
             {% endfor %}
-        </div>
-        <div class="navigation w-full d-flex justify-content-center">
-            {{ knp_pagination_render(comments) }}
         </div>
     </section>
 {% endblock %}
