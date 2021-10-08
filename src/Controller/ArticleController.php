@@ -11,6 +11,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Routing\Annotation\Route;
+
 class ArticleController extends AbstractController
 {
     /**
@@ -22,10 +23,8 @@ class ArticleController extends AbstractController
         ArticleService $articleService,
         CommentService $commentService,
         Request $request,
-        PaginatorInterface $paginator
     ): Response {
         $categories = $articleService->getCategories();
-        $page = $request->query->getInt('page', 1);
         
         if (!in_array($category, $categories)) {
             throw new NotFoundHttpException();
@@ -36,10 +35,11 @@ class ArticleController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $data = $form->getData();
-            $commentService->createComment($category, $slug, strip_tags($data['username']), strip_tags($data['username']));
+            $commentService->create($category, $slug, $data['username'], $data['content']);
+            
             return $this->redirectToRoute('app_article_show', [
                 'slug' => $slug,
-                'category' => $category
+                'category' => $category,
             ]);
         }
 
@@ -47,12 +47,8 @@ class ArticleController extends AbstractController
 
         return $this->render('article/show.html.twig', [
             'article' => $articleService->getArticle($category, $slug),
-            'comments' => $paginator->paginate(
-                $comments,
-                $page,
-                15
-            ),
-            'form' => $form->createView()
+            'comments' => $comments,
+            'form' => $form->createView(),
         ]);
     }
 }
