@@ -1,7 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Erreur 404 -
-	{{ parent() }}
+{% block title %}Erreur 404 - {{ parent() }}
 {% endblock %}
 
 {% block header %}
@@ -24,9 +23,10 @@
 		<div class="container px-3 px-lg-4">
 			<p>
 				Désolé, tu n'as pas l'autorisation d'afficher cette page.<br>
-				{{ exception.message }}<br>
-				Je t'invite à
-				<a href="{{ path('app_app_index') }}">revenir à la page d'accueil</a>.
+				{{ exception.message }}
+			</p>
+			<p>
+				Je t'invite à <a href="{{ path('app_app_index') }}">revenir à la page d'accueil</a>.
 			</p>
 		</div>
 	</main>
