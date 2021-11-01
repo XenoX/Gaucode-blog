@@ -21,3 +21,7 @@ article img {
 em {
     font-style: italic;
 }
+
+.comment-content * {
+    margin: 0.5rem 0;
+}

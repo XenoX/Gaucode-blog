@@ -3,7 +3,11 @@
 namespace App\Controller;
 
 use App\Service\ArticleService;
+use App\Service\CommentService;
+use App\Form\CommentFormType;
+use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Routing\Annotation\Route;
@@ -13,15 +17,38 @@ class ArticleController extends AbstractController
     /**
      * @Route("/article/{category}/{slug}")
      */
-    public function show(string $category, string $slug, ArticleService $articleService): Response
-    {
+    public function show(
+        string $category,
+        string $slug,
+        ArticleService $articleService,
+        CommentService $commentService,
+        Request $request,
+    ): Response {
         $categories = $articleService->getCategories();
+        
         if (!in_array($category, $categories)) {
             throw new NotFoundHttpException();
         }
 
+        $form = $this->createForm(CommentFormType::class, []); 
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $data = $form->getData();
+            $commentService->create($category, $slug, $data['username'], $data['content']);
+            
+            return $this->redirectToRoute('app_article_show', [
+                'slug' => $slug,
+                'category' => $category,
+            ]);
+        }
+
+        $comments = $commentService->getArticleComments($category, $slug);
+
         return $this->render('article/show.html.twig', [
             'article' => $articleService->getArticle($category, $slug),
+            'comments' => $comments,
+            'form' => $form->createView(),
         ]);
     }
 }

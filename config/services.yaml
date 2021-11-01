@@ -24,5 +24,8 @@ services:
     App\Service\ArticleService:
         arguments:
             $projectDir: "%kernel.project_dir%"
+    App\Service\CommentService:
+        arguments:
+            $projectDir: "%kernel.project_dir%"
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
