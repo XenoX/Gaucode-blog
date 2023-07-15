@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Erreur 404 - {{ parent() }}{% endblock %}
+{% block title %}Erreur {{ exception.statusCode }} - {{ parent() }}{% endblock %}
 
 {% block header %}
 	<header class="masthead" style="background-image: url({{ asset('img/error.jpg') }})">
@@ -9,7 +9,7 @@
 				<div class="col-md-10 col-lg-8 col-xl-7">
 					<div class="post-heading">
 						<h1>Erreur {{ exception.statusCode }}</h1>
-						<h2 class="subheading">Une erreur est survenue</h2>
+						<h2 class="subheading">{{ exception.statusText }}</h2>
 					</div>
 				</div>
 			</div>
@@ -20,8 +20,10 @@
 {% block body %}
 	<main class="mb-4">
 		<div class="container px-3 px-lg-4">
-			<p>Désolé, la page demandée ne fonctionne pas</p>
-			<p>Je t'invite à réessayer plus tard.</p>
+			<p>Une erreur s'est produite !</p>
+			<p>Je t'invite à <a href="{{ path('app_app_index') }}">revenir à la page d'accueil</a>
+				ou encore à <a href="https://github.com/XenoX/Gaucode-blog/issues" target="_blank">signaler un bug</a>.
+			</p>
 		</div>
 	</main>
 {% endblock %}

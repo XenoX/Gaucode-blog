@@ -104,7 +104,7 @@ class ArticleService
                     $filename,
                 )
             );
-        } catch (Throwable $exception) {
+        } catch (Throwable) {
             throw new NotFoundHttpException();
         }
 

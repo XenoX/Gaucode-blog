@@ -24,8 +24,8 @@ Histoire d'avoir un historique git le plus propre possible, des conventions de n
 Noms des branches : 
 
 - _article/slug-de-l-article_ pour une création d'article
-- _modification/slug-de-l-article_ pour une modification d'article
-- _feature/slug-de-la-feature_ pour l'ajout d'une fonctionnalité
+- _update/slug-de-l-article_ pour une modification d'article
+- _feat/slug-de-la-feature_ pour l'ajout d'une fonctionnalité
 - _fix/slug-du-fix_ pour un bug résolu
 
 Au niveau des messages de commit, merci d'utiliser [Gitmoji](https://gitmoji.dev/), example : _:memo: Add P1 Planifier sa Formation_

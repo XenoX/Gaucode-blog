@@ -13,8 +13,7 @@ class ArticleController extends AbstractController
     #[Route('/article/{category}/{slug}')]
     public function show(string $category, string $slug, ArticleService $articleService): Response
     {
-        $categories = $articleService->getCategories();
-        if (!in_array($category, $categories)) {
+        if (!in_array($category, $articleService->getCategories())) {
             throw new NotFoundHttpException();
         }
 

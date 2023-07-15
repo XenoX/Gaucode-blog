@@ -18,12 +18,7 @@ class ArticleExtension extends AbstractExtension
     public function getFunctions(): array
     {
         return [
-            new TwigFunction('getBannerPath', [$this, 'getBannerPath']),
+            new TwigFunction('getBannerPath', [$this->articleService, 'getBannerPath']),
         ];
-    }
-
-    public function getBannerPath(string $category, ?string $slug = null): string
-    {
-        return $this->articleService->getBannerPath($category, $slug);
     }
 }

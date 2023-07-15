@@ -12,10 +12,8 @@ class CategoryController extends AbstractController
     #[Route('/categorie/{slug}')]
     public function show(string $slug, ArticleService $articleService): Response
     {
-        $category = $articleService->getCategory($slug);
-
         return $this->render('category/show.html.twig', [
-            'category' => $category,
+            'category' => $articleService->getCategory($slug),
         ]);
     }
 }

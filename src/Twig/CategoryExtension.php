@@ -18,12 +18,7 @@ class CategoryExtension extends AbstractExtension
     public function getFunctions(): array
     {
         return [
-            new TwigFunction('getCategories', [$this, 'getCategories']),
+            new TwigFunction('getCategories', [$this->articleService, 'getCategories']),
         ];
-    }
-
-    public function getCategories(): array
-    {
-        return $this->articleService->getCategories();
     }
 }

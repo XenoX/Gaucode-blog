@@ -21,18 +21,7 @@
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5">
                 {% for article in articles %}
-                    <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-                        <a href="{{ path('app_article_show', {'category': article.category, 'slug': article.slug}) }}">
-                            <div class="card h-100">
-                                <img class="card-img-top" src="{{ asset(getBannerPath(article.category, article.slug)) }}" alt="Card image cap">
-                                <div class="card-body d-flex flex-column flex-nowrap justify-content-between">
-                                    <h5 class="card-title">{{ article.title }}</h5>
-                                    <p class="card-text">{{ article.subtitle }}</p>
-                                    <small class="text-muted">{{ article.author }}</small>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                    {% include 'article/_card.html.twig' with {article} only %}
                 {% endfor %}
             </div>
         </div>

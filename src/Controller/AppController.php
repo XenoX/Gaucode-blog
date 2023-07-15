@@ -12,7 +12,7 @@ class AppController extends AbstractController
     #[Route('/')]
     public function index(): Response
     {
-        return $this->render('app/index.html.twig', []);
+        return $this->render('app/index.html.twig');
     }
 
     #[Route('/contribuer')]
@@ -26,6 +26,6 @@ class AppController extends AbstractController
     #[Route('/a-propos')]
     public function about(): Response
     {
-        return $this->render('app/about.html.twig', []);
+        return $this->render('app/about.html.twig');
     }
 }
