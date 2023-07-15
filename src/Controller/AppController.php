@@ -9,17 +9,13 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class AppController extends AbstractController
 {
-    /**
-     * @Route("/")
-     */
+    #[Route('/')]
     public function index(): Response
     {
         return $this->render('app/index.html.twig', []);
     }
 
-    /**
-     * @Route("/contribuer")
-     */
+    #[Route('/contribuer')]
     public function contribute(AuthorService $authorService): Response
     {
         return $this->render('app/contribute.html.twig', [
@@ -27,9 +23,7 @@ class AppController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/a-propos")
-     */
+    #[Route('/a-propos')]
     public function about(): Response
     {
         return $this->render('app/about.html.twig', []);

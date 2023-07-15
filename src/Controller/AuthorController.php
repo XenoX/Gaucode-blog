@@ -9,9 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class AuthorController extends AbstractController
 {
-    /**
-     * @Route("/auteur/{author}")
-     */
+    #[Route('/auteur/{author}')]
     public function profile(AuthorService $authorService, string $author): Response
     {
         return $this->render('author/profile.html.twig', [

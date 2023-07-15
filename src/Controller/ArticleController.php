@@ -10,9 +10,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class ArticleController extends AbstractController
 {
-    /**
-     * @Route("/article/{category}/{slug}")
-     */
+    #[Route('/article/{category}/{slug}')]
     public function show(string $category, string $slug, ArticleService $articleService): Response
     {
         $categories = $articleService->getCategories();
