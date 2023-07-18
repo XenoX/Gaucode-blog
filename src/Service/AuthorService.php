@@ -18,6 +18,10 @@ class AuthorService
         $authors = [];
 
         foreach ($this->articleService->getArticles() as $article) {
+            if (!array_key_exists('author', $article)) {
+                continue;
+            }
+
             if (!array_key_exists($article['author'], $authors)) {
                 $authors[$article['author']] = 0;
             }
@@ -30,13 +34,13 @@ class AuthorService
     public function getAuthorArticles(string $author): array
     {
         foreach ($articles = $this->articleService->getArticles() as $key => $article) {
-            if ($author === $article['author']) {
+            if (array_key_exists('author', $article) && $author === $article['author']) {
                 continue;
             }
 
             unset($articles[$key]);
         }
 
-        return $articles;
+        return array_values($articles);
     }
 }

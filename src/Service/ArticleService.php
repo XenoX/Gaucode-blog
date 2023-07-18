@@ -57,18 +57,6 @@ class ArticleService
         ];
     }
 
-    public function getBannerPath(string $category, string $slug = null): string
-    {
-        $articleOrCategoryPath = $slug ? sprintf('%s/%s', $category, $slug) : $category;
-        $path = sprintf('%s/%s/%s/%s/%s', $this->projectDir, 'public', self::FOLDER, $articleOrCategoryPath, self::BANNER_FILENAME);
-
-        if (file_exists($path)) {
-            return sprintf('%s/%s/%s', self::FOLDER, $articleOrCategoryPath, self::BANNER_FILENAME);
-        }
-
-        return sprintf('%s/%s/%s', self::FOLDER, $category, self::BANNER_FILENAME);
-    }
-
     public function getArticlesForCategory(string $category): array
     {
         $articlesPath = sprintf('%s/%s/%s/%s/*', $this->projectDir, 'public', self::FOLDER, $category);
@@ -89,6 +77,18 @@ class ArticleService
         }
 
         return $articles;
+    }
+
+    public function getBannerPath(string $category, string $slug = null): string
+    {
+        $articleOrCategoryPath = $slug ? sprintf('%s/%s', $category, $slug) : $category;
+        $path = sprintf('%s/%s/%s/%s/%s', $this->projectDir, 'public', self::FOLDER, $articleOrCategoryPath, self::BANNER_FILENAME);
+
+        if (file_exists($path)) {
+            return sprintf('%s/%s/%s', self::FOLDER, $articleOrCategoryPath, self::BANNER_FILENAME);
+        }
+
+        return sprintf('%s/%s/%s', self::FOLDER, $category, self::BANNER_FILENAME);
     }
 
     private function getFileContent(string $path, string $filename): string
