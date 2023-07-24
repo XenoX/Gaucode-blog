@@ -38,19 +38,18 @@
         for (let code of codes) {
             const spaceIndex = code.textContent.indexOf('\n');
             const language = spaceIndex === -1 ? code.textContent : code.textContent.substring(0, spaceIndex);
-            let comment = ['php', 'shell', 'bash'].includes(language) ? '#' : '//';
-            if (language === 'html') {
-                comment = '<!--';
-                code.textContent = code.textContent.substring(0, spaceIndex) + ' -->' + code.textContent.substring(spaceIndex);
-            }
 
-            code.textContent = `${comment} ${code.textContent}`;
+            code.textContent = code.textContent.replace(/.*/, '').substring(1);
 
-            code.classList.add(`language-${language}`);
+            const preWrapper = document.createElement('pre');
+            preWrapper.classList.add(`language-${language}`);
+            preWrapper.classList.add(`match-braces`);
+
+            preWrapper.setAttribute('data-remove-trailing', 'true'); // Removes trailing whitespace on all lines.
+            preWrapper.setAttribute('data-remove-indent', 'true'); // If the whole code block is indented too much it removes the extra indent.
+            preWrapper.setAttribute('data-tabs-to-spaces', '4'); // Converts all tabs to a certain number of spaces (default is 4 spaces).
 
             const parent = code.parentNode;
-            const preWrapper = document.createElement('pre');
-
             parent.replaceChild(preWrapper, code);
             preWrapper.appendChild(code);
         }
