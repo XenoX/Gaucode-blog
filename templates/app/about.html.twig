@@ -1,9 +1,28 @@
 {% extends 'base.html.twig' %}
 
+{% set bannerPath = 'img/mrrobot.jpg' %}
+
+{% block meta_og %}
+    <meta name="description" content="À propos">
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="{{ app.request.uri }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="GauCode Blog">
+    <meta property="og:description" content="À propos">
+    <meta property="og:image" content="{{ absolute_url(asset(bannerPath)) }}">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="{{ app.request.getSchemeAndHttpHost() }}">
+    <meta property="og:url" content="{{ app.request.uri }}">
+    <meta name="twitter:title" content="GauCode Blog">
+    <meta name="twitter:description" content="À propos">
+    <meta name="twitter:image" content="{{ absolute_url(asset(bannerPath)) }}">
+{% endblock %}
+
 {% block title %}A propos - {{ parent() }}{% endblock %}
 
 {% block header %}
-    <header class="masthead" style="background-image: url({{ asset('img/mrrobot.jpg') }})">
+    <header class="masthead" style="background-image: url({{ asset(bannerPath) }})">
         <div class="container position-relative px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
