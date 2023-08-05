@@ -1,1 +1,1 @@
-Contribuer à un projet open source
+Contribuer à un projet open source 👥

@@ -1,1 +1,1 @@
-Bien préparer sa soutenance
+Bien préparer sa soutenance 🎓
