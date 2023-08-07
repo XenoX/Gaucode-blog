@@ -1,6 +1,6 @@
 # GauCode Blog
 
-GauCode est un blog collaboratif, les articles sont assez liés aux parcours OpenClassrooms mais pas que !
+GauCode est un blog tech collaboratif, les articles sont assez liés au développement, mais pas que !
 
 ## 👨‍💻 Contribuer
 
@@ -28,7 +28,7 @@ Noms des branches :
 - _feat/slug-de-la-feature_ pour l'ajout d'une fonctionnalité
 - _fix/slug-du-fix_ pour un bug résolu
 
-Au niveau des messages de commit, merci d'utiliser [Gitmoji](https://gitmoji.dev/), example : _:memo: Add P1 Planifier sa Formation_
+Au niveau des messages de commit, merci d'utiliser [Gitmoji](https://gitmoji.dev/), example : _:memo: P1 Planifier sa formation_
 
 ### 💎 Autres contributions
 
