@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Service;
 
-use Michelf\Markdown;
+use Michelf\MarkdownExtra;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Throwable;
 
@@ -47,12 +47,14 @@ class ArticleService
     {
         $path = sprintf('%s/%s', $category, $slug);
 
+        // dd(MarkdownExtra::defaultTransform($this->getFileContent($path, self::CONTENT_FILENAME)));
+
         return [
             'category' => $category,
             'slug' => $slug,
             'title' => $this->getFileContent($path, self::TITLE_FILENAME),
             'subtitle' => $this->getFileContent($path, self::SUBTITLE_FILENAME),
-            'content' => Markdown::defaultTransform($this->getFileContent($path, self::CONTENT_FILENAME)),
+            'content' => MarkdownExtra::defaultTransform($this->getFileContent($path, self::CONTENT_FILENAME)),
             'author' => $this->getFileContent($path, self::AUTHOR_FILENAME),
         ];
     }

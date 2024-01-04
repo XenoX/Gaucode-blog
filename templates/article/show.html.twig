@@ -54,21 +54,18 @@
             image.src = image.src.replace('{{ article.category }}', '{{ article.category ~ '/' ~ article.slug }}');
         }
 
-        const codes = document.getElementsByTagName('code');
-        for (let code of codes) {
+        for (let code of document.getElementsByTagName('code')) {
             const spaceIndex = code.textContent.indexOf('\n');
-            const language = spaceIndex === -1 ? code.textContent : code.textContent.substring(0, spaceIndex);
-
-            code.textContent = code.textContent.replace(/.*/, '').substring(1);
+            console.log(spaceIndex);
+            if (spaceIndex === -1) {
+                continue;
+            }
 
             const preWrapper = document.createElement('pre');
-            preWrapper.classList.add(`language-${language}`);
+            preWrapper.classList.add(`language-${code.className}`);
             preWrapper.classList.add(`match-braces`);
-
-            preWrapper.setAttribute('data-remove-trailing', 'true'); // Removes trailing whitespace on all lines.
-            preWrapper.setAttribute('data-remove-indent', 'true'); // If the whole code block is indented too much it removes the extra indent.
-            preWrapper.setAttribute('data-tabs-to-spaces', '4'); // Converts all tabs to a certain number of spaces (default is 4 spaces).
-
+            preWrapper.setAttribute('tabindex', '0');
+            
             const parent = code.parentNode;
             parent.replaceChild(preWrapper, code);
             preWrapper.appendChild(code);

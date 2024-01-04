@@ -8,7 +8,7 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "composer/package-versions-deprecated": "1.11.99.2",
-        "michelf/php-markdown": "^1.9",
+        "michelf/php-markdown": "^2.0",
         "phpdocumentor/reflection-docblock": "^5.3",
         "symfony/asset": "6.3.*",
         "symfony/console": "6.3.*",
