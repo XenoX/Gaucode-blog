@@ -54,11 +54,13 @@ Le même code en version bien indenté :
                 <li>Contact</li>
             </ul>
         </nav>
+
         <main>
             <article>
                 <header>Article 1</header>
                 <div>Contenu</div>
             </article>
+
             <article>
                 <header>Article 2</header>
                 <div>Contenu</div>
@@ -101,12 +103,14 @@ Le même code avec des noms de variable et de fonction compréhensibles :
 function addObjectToBasket(object) {
     const basket = JSON.parse(localStorage.getItem('basket')) ?? [];
     const productIndexAlreadyExist = basket.findIndex(product => product._id === object._id);
+
     if (productIndexAlreadyExist !== -1) {
         basket[productIndexAlreadyExist].quantity = basket[productIndexAlreadyExist].quantity + 1;
     } else {
         object.quantity = 1;
         basket.push(object);
     }
+
     localStorage.setItem('basket', JSON.stringify(data));
 }
 ```
