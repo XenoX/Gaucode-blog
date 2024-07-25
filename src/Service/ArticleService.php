@@ -47,8 +47,6 @@ class ArticleService
     {
         $path = sprintf('%s/%s', $category, $slug);
 
-        // dd(MarkdownExtra::defaultTransform($this->getFileContent($path, self::CONTENT_FILENAME)));
-
         return [
             'category' => $category,
             'slug' => $slug,
