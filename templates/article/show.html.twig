@@ -3,21 +3,20 @@
 {% set bannerPath = getBannerPath(article.category, article.slug) %}
 
 {% block meta_og %}
+    {% set og_title = article.title %}
+    {% set og_description = article.subtitle|default('The LocalHost Blog') %}
+    {% set og_image = absolute_url(asset(bannerPath)) %}
+    {% set og_type = "article" %}
+
     <meta name="description" content="{{ article.subtitle|default(article.title) }}">
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="{{ app.request.uri }}">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="{{ article.title }}">
-    <meta property="og:description" content="{{ article.subtitle|default('The LocalHost Blog') }}">
-    <meta property="og:image" content="{{ absolute_url(asset(bannerPath)) }}">
+    <meta property="og:type" content="{{ og_type }}">
+    <meta property="og:title" content="{{ og_title }}">
+    <meta property="og:description" content="{{ og_description }}">
+    <meta property="og:image" content="{{ og_image }}">
     <meta property="og:article:author" content="{{ article.author }}">
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="{{ app.request.getSchemeAndHttpHost() }}">
-    <meta property="og:url" content="{{ app.request.uri }}">
-    <meta name="twitter:title" content="{{ article.title }}">
-    <meta name="twitter:description" content="{{ article.subtitle|default('The LocalHost Blog') }}">
-    <meta name="twitter:image" content="{{ absolute_url(asset(bannerPath)) }}">
+    <meta name="twitter:title" content="{{ og_title }}">
+    <meta name="twitter:description" content="{{ og_description }}">
+    <meta name="twitter:image" content="{{ og_image }}">
 {% endblock %}
 
 {% block title %}[{{ article.category|upper }}] {{ article.title }} - {{ parent() }}{% endblock %}

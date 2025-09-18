@@ -3,20 +3,19 @@
 {% set bannerPath = 'img/contribute.jpg' %}
 
 {% block meta_og %}
-    <meta name="description" content="Contribuer au blog">
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="{{ app.request.uri }}">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="The LocalHost Blog">
-    <meta property="og:description" content="Contribuer au blog">
-    <meta property="og:image" content="{{ absolute_url(asset(bannerPath)) }}">
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="{{ app.request.getSchemeAndHttpHost() }}">
-    <meta property="og:url" content="{{ app.request.uri }}">
-    <meta name="twitter:title" content="The LocalHost Blog">
-    <meta name="twitter:description" content="Contribuer au blog">
-    <meta name="twitter:image" content="{{ absolute_url(asset(bannerPath)) }}">
+    {% set og_title = "The LocalHost Blog" %}
+    {% set og_description = "Contribuer au blog" %}
+    {% set og_image = absolute_url(asset(bannerPath)) %}
+    {% set og_type = "website" %}
+
+    <meta name="description" content="{{ og_description }}">
+    <meta property="og:type" content="{{ og_type }}">
+    <meta property="og:title" content="{{ og_title }}">
+    <meta property="og:description" content="{{ og_description }}">
+    <meta property="og:image" content="{{ og_image }}">
+    <meta name="twitter:title" content="{{ og_title }}">
+    <meta name="twitter:description" content="{{ og_description }}">
+    <meta name="twitter:image" content="{{ og_image }}">
 {% endblock %}
 
 {% block title %}Contribuer - {{ parent() }}{% endblock %}
