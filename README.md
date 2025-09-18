@@ -1,6 +1,6 @@
-# GauCode Blog
+# The LocalHost Blog
 
-GauCode est un blog tech collaboratif, les articles sont assez liés au développement, mais pas que !
+The LocalHost Blog est un blog tech collaboratif de la communauté Discord "The LocalHost", les articles sont assez liés au développement, mais pas que !
 
 ## 👨‍💻 Contribuer
 

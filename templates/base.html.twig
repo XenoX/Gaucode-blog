@@ -3,20 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>{% block title %}GauCode Blog{% endblock %}</title>
+        <title>{% block title %}The LocalHost Blog{% endblock %}</title>
         {% block meta_og %}
             <meta name="description" content="Blog d'un mentor en développement pour t'aider dans ton parcours.">
             <!-- Facebook Meta Tags -->
             <meta property="og:url" content="{{ app.request.uri }}">
             <meta property="og:type" content="website">
-            <meta property="og:title" content="GauCode Blog">
+            <meta property="og:title" content="The LocalHost Blog">
             <meta property="og:description" content="Ton compagnon de parcours.">
             <meta property="og:image" content="{{ absolute_url(asset('img/home.jpg')) }}">
             <!-- Twitter Meta Tags -->
             <meta name="twitter:card" content="summary_large_image">
             <meta property="twitter:domain" content="{{ app.request.getSchemeAndHttpHost() }}">
             <meta property="og:url" content="{{ app.request.uri }}">
-            <meta name="twitter:title" content="GauCode Blog">
+            <meta name="twitter:title" content="The LocalHost Blog">
             <meta name="twitter:description" content="Ton compagnon de parcours.">
             <meta name="twitter:image" content="{{ absolute_url(asset('img/home.jpg')) }}">
         {% endblock %}
@@ -33,7 +33,7 @@
     <body class="line-numbers">
         <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="{{ path('app_app_index') }}">GauCode</a>
+                <a class="navbar-brand" href="{{ path('app_app_index') }}">The LocalHost</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -60,7 +60,7 @@
                     <div class="row gx-4 gx-lg-5 justify-content-center">
                         <div class="col-md-10 col-lg-8 col-xl-7">
                             <div class="site-heading">
-                                <h1>GauCode Blog</h1>
+                                <h1>The LocalHost Blog</h1>
                                 <h2 class="subheading">Ton compagnon de parcours.</h2>
                             </div>
                         </div>
@@ -77,31 +77,23 @@
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <ul class="list-inline text-center">
                             <li class="list-inline-item">
-                                <a href="https://twitter.com/XenoX_" target="_blank">
+                                <a href="https://discord.gg/S8JUfTKmaF" target="_blank">
                                     <span class="fa-stack fa-lg">
                                         <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                        <i class="fab fa-discord fa-stack-1x fa-inverse"></i>
                                     </span>
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="https://github.com/XenoX" target="_blank">
+                                <a href="https://github.com/The-LocalHost-Discord" target="_blank">
                                     <span class="fa-stack fa-lg">
                                         <i class="fas fa-circle fa-stack-2x"></i>
                                         <i class="fab fa-github fa-stack-1x fa-inverse"></i>
                                     </span>
                                 </a>
                             </li>
-                            <li class="list-inline-item">
-                                <a href="https://www.linkedin.com/in/gauthier-b-4a19531a3/" target="_blank">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
                         </ul>
-                        <div class="small text-center text-muted fst-italic">Copyright &copy; GauCode {{ 'now'|date('Y') }}</div>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; The LocalHost {{ 'now'|date('Y') }}</div>
                     </div>
                 </div>
             </div>

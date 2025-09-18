@@ -7,14 +7,14 @@
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="{{ app.request.uri }}">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="GauCode Blog">
+    <meta property="og:title" content="The LocalHost Blog">
     <meta property="og:description" content="À propos">
     <meta property="og:image" content="{{ absolute_url(asset(bannerPath)) }}">
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="{{ app.request.getSchemeAndHttpHost() }}">
     <meta property="og:url" content="{{ app.request.uri }}">
-    <meta name="twitter:title" content="GauCode Blog">
+    <meta name="twitter:title" content="The LocalHost Blog">
     <meta name="twitter:description" content="À propos">
     <meta name="twitter:image" content="{{ absolute_url(asset(bannerPath)) }}">
 {% endblock %}
@@ -28,7 +28,7 @@
                 <div class="col-md-10 col-lg-8 col-xl-7">
                     <div class="post-heading">
                         <h1>A propos</h1>
-                        <h2 class="subheading">GauCode, ton compagnon d'apprentissage.</h2>
+                        <h2 class="subheading">The LocalHost, ta communauté d'entraide tech.</h2>
                     </div>
                 </div>
             </div>
@@ -37,52 +37,47 @@
 {% endblock %}
 
 {% block body %}
-    {% set birthdate = date('1992-09-22') %}
-    {% set age = date(date('now')).diff(date(birthdate)) %}
     <main class="mb-4">
         <div class="container px-3 px-lg-4">
-            <p>Salut !</p>
+            <h2>The LocalHost - Communauté d'entraide tech</h2>
             <p>
-                Je m'appelle Gauthier (aka XenoX), j'ai {{ age.y }}ans, j'habite dans le Nord, à Lille.<br>
-                Je suis passionné par l'informatique (dev, réseaux, système, sécurité) depuis l'âge de 12ans.
-            </p>
-            <p>J'ai un cursus assez classique : </p>
-            <ul>
-                <li>BEP SEID (<i>Systèmes Eletroniques Industriels Domestiques</i>)</li>
-                <li>Bac Pro SEN option TR (<i>Système Electronique et Numérique</i>) (<i>Télécomunications Réseaux</i>)</li>
-                <li>BTS SIO option SLAM (<i>Services Informatiques aux Organisations</i>) (<i>Solutions Logicielles et Applications Métiers</i>)</li>
-                <li>SUPINFO</li>
-            </ul>
-            <p>Après les études, j'ai été Développeur Web pour plusieurs clients :</p>
-            <ul>
-                <li>Auchan Retail</li>
-                <li>Uni-Medias</li>
-                <li>France Télévisions</li>
-                <li>Decathlon</li>
-                <li>L'Équipe</li>
-                <li>L'Étudiant</li>
-                <li>Le Conseil National des Barreaux</li>
-            </ul>
-            <p>
-                Depuis l'année 2018, je suis aussi mentor pour OpenClassrooms, c'est à force de voir les étudiants bloqués sur les mêmes problèmes,
-                que j'ai décidé de faire ce blog. Une sorte de compagnon de route d'un étudiant OC :)
+                The LocalHost est une communauté Discord d'entraide tech créée en juin 2025.
+                Nous rassemblons une quarantaine de passionnés : développeurs, administrateurs réseaux et système, experts en cybersécurité.
             </p>
             <p>
-                En 2023, je décide de devenir freelance et me concentrer sur la formation.<br>
-                Je me lance dans le tutorat chez <a href="https://oclock.io/" target="_blank">O'Clock</a>, qui allie mes deux passions : Le développement et le partage de connaissances.
+                Notre objectif est simple : s'entraider, se soutenir et faire de la veille technologique ensemble.
+                Une communauté bienveillante où chaque membre peut apprendre, partager ses connaissances et évoluer dans sa carrière tech.
             </p>
             <p>
-                En 2024, je deviens lead dev pour le CNB, je suis responsable de plusieurs projets
+                <strong>Rejoins-nous sur Discord :</strong> <a href="https://discord.gg/S8JUfTKmaF" target="_blank">https://discord.gg/S8JUfTKmaF</a>
             </p>
             <p>
-                En plus, c'est un blog collaboratif donc n'hésite pas à <a href="{{ path('app_app_contribute') }}" target="_blank">contribuer</a>,
-                que ce soit de la simple modification ou de la création d'un article.<br>
-                Cela va te permettre d'aider les autres mais aussi de t'apprendre à utiliser Git et Github sur un autre projet que le tien et donc un début de travail en équipe,
-                c'est pas génial ça ? :)
+                Ce blog collaboratif est né de cette volonté de partage. Les articles couvrent le développement,
+                les réseaux, les systèmes et la cybersécurité, reflet de la diversité de notre communauté.
+            </p>
+
+            <h3>À propos de l'initiative</h3>
+            <p>
+                Je m'appelle Gauthier (XenoX), membre actif de The LocalHost.
+                Développeur passionné, mentor OpenClassrooms depuis 2018 et tuteur chez <a href="https://oclock.io/" target="_blank">O'Clock</a>,
+                j'ai voulu créer ce blog pour accompagner la communauté dans son apprentissage.
             </p>
             <p>
-                Ce blog est réalisé en Symfony et est open-source, n'hésite pas à y jeter un coup d'oeil, ça se passe ici :
-                <a href="https://github.com/XenoX/Gaucode-blog" target="_blank">https://github.com/XenoX/Gaucode-blog</a>
+                Actuellement lead dev au CNB, je partage mon expérience à travers ce blog collaboratif
+                qui permet à chacun de contribuer et d'apprendre.
+            </p>
+
+            <h3>Contribuer</h3>
+            <p>
+                Ce blog est collaboratif ! N'hésite pas à <a href="{{ path('app_app_contribute') }}">contribuer</a>,
+                que ce soit pour créer un article, corriger une erreur ou proposer une amélioration.
+            </p>
+            <p>
+                C'est aussi une excellente occasion d'apprendre Git et GitHub en contribuant à un projet collectif !
+            </p>
+            <p>
+                Le blog est développé en Symfony et est open-source :
+                <a href="https://github.com/The-LocalHost-Discord/TLH-Blog" target="_blank">https://github.com/The-LocalHost-Discord/TLH-Blog</a>
             </p>
         </div>
     </main>

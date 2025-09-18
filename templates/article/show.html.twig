@@ -8,7 +8,7 @@
     <meta property="og:url" content="{{ app.request.uri }}">
     <meta property="og:type" content="article">
     <meta property="og:title" content="{{ article.title }}">
-    <meta property="og:description" content="{{ article.subtitle|default('GauCode Blog') }}">
+    <meta property="og:description" content="{{ article.subtitle|default('The LocalHost Blog') }}">
     <meta property="og:image" content="{{ absolute_url(asset(bannerPath)) }}">
     <meta property="og:article:author" content="{{ article.author }}">
     <!-- Twitter Meta Tags -->
@@ -16,7 +16,7 @@
     <meta property="twitter:domain" content="{{ app.request.getSchemeAndHttpHost() }}">
     <meta property="og:url" content="{{ app.request.uri }}">
     <meta name="twitter:title" content="{{ article.title }}">
-    <meta name="twitter:description" content="{{ article.subtitle|default('GauCode Blog') }}">
+    <meta name="twitter:description" content="{{ article.subtitle|default('The LocalHost Blog') }}">
     <meta name="twitter:image" content="{{ absolute_url(asset(bannerPath)) }}">
 {% endblock %}
 
